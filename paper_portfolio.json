@@ -1,0 +1,55 @@
+{
+ "startedAt": "2026-10-22T08:28:10.528Z",
+ "startCapitalILS": 10000,
+ "usdIls": 3.090788,
+ "usdIlsSource": "open.er-api.com at inception, fixed for the whole test",
+ "startCapitalUSD": 3235.42,
+ "cashUSD": 3235.4208700176137,
+ "pending": [],
+ "open": [],
+ "closed": [],
+ "equity": [
+  {
+   "date": "2026-10-21",
+   "equityUSD": 3235.42,
+   "equityILS": 10000
+  }
+ ],
+ "log": [],
+ "stats": {
+  "closedTrades": 0,
+  "openTrades": 0,
+  "pending": 0,
+  "winRate": null,
+  "expectancyPct": null,
+  "avgWinPct": null,
+  "avgLossPct": null,
+  "maxDrawdownPct": 0,
+  "equityILS": 10000,
+  "pnlILS": 0,
+  "pnlPct": 0,
+  "doNothingILS": 10000,
+  "taxNote": "Not deducted. At 25% on gains, after-tax P&L would be 0 ILS."
+ },
+ "updatedAt": "2026-10-22T08:28:10.529Z",
+ "dataAsOf": "2026-10-21",
+ "assumptions": {
+  "entry": "next trading day open after the alert, plus slippage",
+  "slippagePerSidePct": "by liquidity: 0.1 to 0.6",
+  "feesRoundTripPct": 0.4,
+  "riskPerTradePct": 1,
+  "stopPct": 5,
+  "targetPct": 8,
+  "timeStopDays": 10,
+  "maxPositionPctOfEquity": 25,
+  "fx": "open.er-api.com at inception, fixed for the whole test",
+  "notModeled": [
+   "tax",
+   "halts",
+   "real spreads and partial fills",
+   "delisted names",
+   "intraday path (same-day target and stop = stop)"
+  ]
+ },
+ "summary": "Virtual portfolio (not real money), data as of 2026-10-21: capital 10000 ILS vs 10000 ILS at start (+0 ILS, 0%). Doing nothing would still be 10000 ILS. No alert has passed the strict gate yet, so nothing was bought. That is the intended behavior: the system stays in cash until a signal type proves positive expectancy after costs. Small samples prove nothing; fees and slippage are included, tax is not."
+}
