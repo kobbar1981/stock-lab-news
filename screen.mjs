@@ -88,16 +88,39 @@ function outcome(bars, i, priorHigh, adv) {
   // no look-ahead: the signal is known only after the close of bar i, so entry is the NEXT bar's open
   const sl = slipPct(adv);
   const e = bars[i + 1].o * (1 + sl / 100), stop = e * STOP, tgt = e * TARGET;
-  let exit = bars[i + FWD].c, res = 'timeout';
+  let exit = bars[i + FWD].c, res = 'timeout', xk = i + FWD;
   for (let k = i + 1; k <= i + FWD; k++) {
-    if (bars[k].l <= stop) { exit = Math.min(stop, bars[k].o); res = 'stop'; break; } // gap through the stop fills at the open; same-day touch of both = stop
-    if (bars[k].h >= tgt) { exit = Math.max(tgt, bars[k].o); res = 'hit'; break; }
+    if (bars[k].l <= stop) { exit = Math.min(stop, bars[k].o); res = 'stop'; xk = k; break; } // gap through the stop fills at the open; same-day touch of both = stop
+    if (bars[k].h >= tgt) { exit = Math.max(tgt, bars[k].o); res = 'hit'; xk = k; break; }
   }
   exit *= (1 - sl / 100);
   let falseBO = false;
   for (let k = i + 1; k <= Math.min(i + 3, bars.length - 1); k++) if (bars[k].c < priorHigh) { falseBO = true; break; }
   const gross = (exit / e - 1) * 100, net = gross - COST_PCT;
-  return { res, gross, net, netTax: net > 0 ? net * (1 - TAX / 100) : net, r: net / ((1 - STOP) * 100), t: bars[i].t, falseBO };
+  return { entryT: bars[i + 1].t, exitT: bars[xk].t, entry: e, exitPx: exit, res, gross, net, netTax: net > 0 ? net * (1 - TAX / 100) : net, r: net / ((1 - STOP) * 100), t: bars[i].t, falseBO };
+}
+
+function simPortfolio(arr, startUSD) {
+  // retrospective portfolio: every signal of this type, 1% risk per trade, max 25% of equity per position, cash-limited, costs included
+  const trades = [...arr].sort((a, b) => a.entryT - b.entryT);
+  let cash = startUSD; const open = []; const closed = []; const curve = []; let skipped = 0;
+  const settle = t => { for (let k = open.length - 1; k >= 0; k--) if (open[k].exitT <= t) { const p = open.splice(k, 1)[0]; const fee = p.sh * p.exitPx * COST_PCT / 200; cash += p.sh * p.exitPx - fee; const cost = p.sh * p.entry + p.feeIn; closed.push({ t: p.exitT, pnl: p.sh * p.exitPx - fee - cost, cost }); } };
+  const eqNow = () => cash + open.reduce((a, p) => a + p.sh * p.entry, 0);
+  for (const x of trades) {
+    settle(x.entryT);
+    const eq = eqNow(); const sh = Math.floor(Math.min(eq * 0.01 / (x.entry * 0.05), eq * 0.25 / x.entry, cash / (x.entry * (1 + COST_PCT / 200))));
+    if (sh < 1) { skipped++; continue; }
+    const feeIn = sh * x.entry * COST_PCT / 200; cash -= sh * x.entry + feeIn;
+    open.push({ sh, entry: x.entry, exitPx: x.exitPx, exitT: x.exitT, feeIn });
+    curve.push({ t: x.entryT, eq: eqNow() });
+  }
+  settle(Infinity);
+  closed.sort((a, b) => a.t - b.t);
+  let eq = startUSD, peak = eq, dd = 0; const pts = [];
+  for (const c of closed) { eq += c.pnl; peak = Math.max(peak, eq); dd = Math.max(dd, (peak - eq) / peak * 100); pts.push({ date: new Date(c.t * 1000).toISOString().slice(0, 10), eq: +eq.toFixed(2) }); }
+  const w = closed.filter(c => c.pnl > 0).length;
+  return { trades: closed.length, skippedNoCash: skipped, winRatePct: closed.length ? +(w / closed.length * 100).toFixed(1) : null, expectancyPct: closed.length ? +(closed.reduce((a, c) => a + c.pnl / c.cost * 100, 0) / closed.length).toFixed(2) : null,
+    endUSD: +eq.toFixed(2), returnPct: +((eq / startUSD - 1) * 100).toFixed(2), maxDrawdownPct: +dd.toFixed(1), curve: pts.filter((_, i) => i % Math.max(1, Math.floor(pts.length / 60)) === 0 || i === pts.length - 1) };
 }
 const regimeByDate = {};
 const hist = { base: [], strong: [] };
@@ -112,6 +135,7 @@ function analyze(s, d) {
     if (i === n - 1) { today = { sig: e.sig, bars }; continue; }
     const o = outcome(bars, i, e.sig.priorHigh, e.sig.avgDollarVol);
     if (!o) continue;
+    o.sym = s.symbol;
     hist.base.push(o); if (e.sig.strong) hist.strong.push(o);
   }
   if (!today) return { skip: 'short' };
@@ -180,6 +204,11 @@ async function worker() {
 }
 await Promise.all(Array.from({ length: CONC }, worker));
 const st = { base: stats(hist.base), strong: stats(hist.strong) };
+const fx = (await get('https://open.er-api.com/v6/latest/USD'))?.rates?.ILS || null;
+const START_USD = fx ? 10000 / fx : 3000;
+const bt = { label: 'RETROSPECTIVE backtest portfolio (what would have happened on past data; not forward results)', startILS: 10000, usdIls: fx, fxNote: fx ? 'open.er-api.com, today rate applied to the whole period' : 'rate unavailable, assumed 3.3', period: spy ? `${new Date(spy[50].t * 1000).toISOString().slice(0, 10)} to ${new Date(spy[spy.length - 1].t * 1000).toISOString().slice(0, 10)}` : null,
+  strong: simPortfolio(hist.strong, START_USD), base: simPortfolio(hist.base, START_USD) };
+for (const k of ['strong', 'base']) { bt[k].endILS = +(bt[k].endUSD * (fx || 3.3)).toFixed(0); bt[k].pnlILS = bt[k].endILS - 10000; }
 const gate = k => { const x = st[k]; return !!(x.n >= THRESH.minN && x.expectancyNetPct >= THRESH.minExpectancyNetPct && x.firstPeriod.n >= THRESH.minPeriodN && x.secondPeriod.n >= THRESH.minPeriodN && x.firstPeriod.expectancyNetPct > 0 && x.secondPeriod.expectancyNetPct > 0 && x.maxDrawdownR <= THRESH.maxDrawdownR); };
 const final = [];
 for (const c of cands) {
@@ -205,7 +234,7 @@ const meta = { generatedAt: new Date().toISOString(), dataAsOf, source: 'Nasdaq.
     alertGate: THRESH,
     text: 'close > highest high of prior 20 days; today volume >= 1.5x and 5-day avg volume >= 1.2x of prior 20-day avg; price >= $3; 20d avg dollar volume >= $5M; market cap $300M-$10B; excludes >25% one-day or >60% 5-day jumps; ETFs, test, OTC, warrants, units, preferred excluded. "Strong" adds: volume >= 2x, above 50-day average, no trap flags, S&P 500 (SPY) above its 50-day average. An alert needs: strong signal, verified market cap, market regime ok, AND the strong signal type has positive net expectancy in both halves of the last ~2 years with enough samples and bounded drawdown.' },
   universe: universeSize, preFilteredByCap: preSkipped, scanned, failed, rateLimited: netStats.rate, filteredOut: skips, ok: failRate < 0.15 && scanned > 0,
-  historicalStats: { ...st, alertGatePassed: { base: gate('base'), strong: gate('strong') }, assumptions: { entry: 'next-day open', slippagePerSidePct: 'by 20d avg dollar volume: <$10M 0.6, <$25M 0.35, <$100M 0.2, else 0.1', feesRoundTripPct: COST_PCT, taxPct: TAX, notModeled: ['delisted/failed stocks (free data lists only current symbols)', 'halts and gaps beyond the open', 'real bid/ask spread and partial fills', 'intraday path (same-day target and stop touch is counted as a stop)', 'tax loss offsets and currency conversion (ILS/USD)', 'float and catalyst/news'] }, note: 'Measured on the last ~2 years of symbols listed TODAY (survivorship bias: delisted losers are missing, so real results are likely worse). The same data was used to shape the rules (in-sample). Signals cluster on the same market days, so they are not independent. Real slippage on small names can exceed these assumptions; halts, bid/ask spreads and partial fills are not modeled; the free data is end-of-day and delayed; no intraday data. Past results are not a guarantee.' },
+  backtestPortfolio: bt, historicalStats: { ...st, alertGatePassed: { base: gate('base'), strong: gate('strong') }, assumptions: { entry: 'next-day open', slippagePerSidePct: 'by 20d avg dollar volume: <$10M 0.6, <$25M 0.35, <$100M 0.2, else 0.1', feesRoundTripPct: COST_PCT, taxPct: TAX, notModeled: ['delisted/failed stocks (free data lists only current symbols)', 'halts and gaps beyond the open', 'real bid/ask spread and partial fills', 'intraday path (same-day target and stop touch is counted as a stop)', 'tax loss offsets and currency conversion (ILS/USD)', 'float and catalyst/news'] }, note: 'Measured on the last ~2 years of symbols listed TODAY (survivorship bias: delisted losers are missing, so real results are likely worse). The same data was used to shape the rules (in-sample). Signals cluster on the same market days, so they are not independent. Real slippage on small names can exceed these assumptions; halts, bid/ask spreads and partial fills are not modeled; the free data is end-of-day and delayed; no intraday data. Past results are not a guarantee.' },
   disclaimer: 'Filters reduce but cannot eliminate pump, manipulation or trap risk. Catalyst/news and float are not checked here. Signals, not investment advice.' };
 fs.writeFileSync(process.env.OUT || 'candidates.json', JSON.stringify({ ...meta, count: final.length, candidates: final }, null, 1));
 fs.writeFileSync(process.env.OUT2 || 'alerts.json', JSON.stringify({ ...meta, count: alerts.length, alerts }, null, 1));
