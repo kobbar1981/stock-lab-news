@@ -100,18 +100,19 @@ function outcome(bars, i, priorHigh, adv) {
   return { entryT: bars[i + 1].t, exitT: bars[xk].t, entry: e, exitPx: exit, res, gross, net, netTax: net > 0 ? net * (1 - TAX / 100) : net, r: net / ((1 - STOP) * 100), t: bars[i].t, falseBO };
 }
 
-function simPortfolio(arr, startUSD) {
+function simPortfolio(arr, startUSD, rate) {
+  const list = [];
   // retrospective portfolio: every signal of this type, 1% risk per trade, max 25% of equity per position, cash-limited, costs included
   const trades = [...arr].sort((a, b) => a.entryT - b.entryT);
   let cash = startUSD; const open = []; const closed = []; const curve = []; let skipped = 0;
-  const settle = t => { for (let k = open.length - 1; k >= 0; k--) if (open[k].exitT <= t) { const p = open.splice(k, 1)[0]; const fee = p.sh * p.exitPx * COST_PCT / 200; cash += p.sh * p.exitPx - fee; const cost = p.sh * p.entry + p.feeIn; closed.push({ t: p.exitT, pnl: p.sh * p.exitPx - fee - cost, cost }); } };
+  const settle = t => { for (let k = open.length - 1; k >= 0; k--) if (open[k].exitT <= t) { const p = open.splice(k, 1)[0]; const fee = p.sh * p.exitPx * COST_PCT / 200; cash += p.sh * p.exitPx - fee; const cost = p.sh * p.entry + p.feeIn; const pnl = p.sh * p.exitPx - fee - cost; closed.push({ t: p.exitT, pnl, cost }); list.push({ symbol: p.sym, entryDate: new Date(p.entryT * 1000).toISOString().slice(0, 10), entryPrice: +p.entry.toFixed(2), exitDate: new Date(p.exitT * 1000).toISOString().slice(0, 10), exitPrice: +p.exitPx.toFixed(2), exitReason: p.res, shares: p.sh, pnlUSD: +pnl.toFixed(2), pnlILS: +(pnl * (rate || 3.3)).toFixed(2), pnlPct: +(pnl / cost * 100).toFixed(2) }); } };
   const eqNow = () => cash + open.reduce((a, p) => a + p.sh * p.entry, 0);
   for (const x of trades) {
     settle(x.entryT);
     const eq = eqNow(); const sh = Math.floor(Math.min(eq * 0.01 / (x.entry * 0.05), eq * 0.25 / x.entry, cash / (x.entry * (1 + COST_PCT / 200))));
     if (sh < 1) { skipped++; continue; }
     const feeIn = sh * x.entry * COST_PCT / 200; cash -= sh * x.entry + feeIn;
-    open.push({ sh, entry: x.entry, exitPx: x.exitPx, exitT: x.exitT, feeIn });
+    open.push({ sh, entry: x.entry, exitPx: x.exitPx, exitT: x.exitT, feeIn, sym: x.sym, entryT: x.entryT, res: x.res });
     curve.push({ t: x.entryT, eq: eqNow() });
   }
   settle(Infinity);
@@ -119,7 +120,8 @@ function simPortfolio(arr, startUSD) {
   let eq = startUSD, peak = eq, dd = 0; const pts = [];
   for (const c of closed) { eq += c.pnl; peak = Math.max(peak, eq); dd = Math.max(dd, (peak - eq) / peak * 100); pts.push({ date: new Date(c.t * 1000).toISOString().slice(0, 10), eq: +eq.toFixed(2) }); }
   const w = closed.filter(c => c.pnl > 0).length;
-  return { trades: closed.length, skippedNoCash: skipped, winRatePct: closed.length ? +(w / closed.length * 100).toFixed(1) : null, expectancyPct: closed.length ? +(closed.reduce((a, c) => a + c.pnl / c.cost * 100, 0) / closed.length).toFixed(2) : null,
+  list.sort((a, b) => a.entryDate < b.entryDate ? -1 : 1);
+  return { tradeList: list, trades: closed.length, skippedNoCash: skipped, winRatePct: closed.length ? +(w / closed.length * 100).toFixed(1) : null, expectancyPct: closed.length ? +(closed.reduce((a, c) => a + c.pnl / c.cost * 100, 0) / closed.length).toFixed(2) : null,
     endUSD: +eq.toFixed(2), returnPct: +((eq / startUSD - 1) * 100).toFixed(2), maxDrawdownPct: +dd.toFixed(1), curve: pts.filter((_, i) => i % Math.max(1, Math.floor(pts.length / 60)) === 0 || i === pts.length - 1) };
 }
 const regimeByDate = {};
@@ -206,9 +208,17 @@ await Promise.all(Array.from({ length: CONC }, worker));
 const st = { base: stats(hist.base), strong: stats(hist.strong) };
 const fx = (await get('https://open.er-api.com/v6/latest/USD'))?.rates?.ILS || null;
 const START_USD = fx ? 10000 / fx : 3000;
+const cutoff = Math.floor(Date.now() / 1000) - 365 * 86400;
+const spy12 = spy ? spy.filter(b => b.t >= cutoff) : [];
+const bh = spy12.length > 1 ? +((spy12[spy12.length - 1].c / spy12[0].o - 1) * 100).toFixed(2) : null;
 const bt = { label: 'RETROSPECTIVE backtest portfolio (what would have happened on past data; not forward results)', startILS: 10000, usdIls: fx, fxNote: fx ? 'open.er-api.com, today rate applied to the whole period' : 'rate unavailable, assumed 3.3', period: spy ? `${new Date(spy[50].t * 1000).toISOString().slice(0, 10)} to ${new Date(spy[spy.length - 1].t * 1000).toISOString().slice(0, 10)}` : null,
-  strong: simPortfolio(hist.strong, START_USD), base: simPortfolio(hist.base, START_USD) };
-for (const k of ['strong', 'base']) { bt[k].endILS = +(bt[k].endUSD * (fx || 3.3)).toFixed(0); bt[k].pnlILS = bt[k].endILS - 10000; }
+  window12m: spy12.length ? `${new Date(spy12[0].t * 1000).toISOString().slice(0, 10)} to ${new Date(spy12[spy12.length - 1].t * 1000).toISOString().slice(0, 10)}` : null, spyBuyHold12mPct: bh, spyBuyHold12mILS: bh == null ? null : Math.round(10000 * (1 + bh / 100)),
+  strong: simPortfolio(hist.strong, START_USD, fx), base: simPortfolio(hist.base, START_USD, fx),
+  strong12m: simPortfolio(hist.strong.filter(x => x.entryT >= cutoff), START_USD, fx), base12m: simPortfolio(hist.base.filter(x => x.entryT >= cutoff), START_USD, fx) };
+for (const k of ['strong', 'base', 'strong12m', 'base12m']) { bt[k].afterTaxEndILS = 0; bt[k].endILS = +(bt[k].endUSD * (fx || 3.3)).toFixed(0); bt[k].pnlILS = bt[k].endILS - 10000; bt[k].afterTaxEndILS = Math.round(10000 + (bt[k].pnlILS > 0 ? bt[k].pnlILS * 0.75 : bt[k].pnlILS)); }
+const trades12 = { generatedAt: new Date().toISOString(), window: bt.window12m, note: 'Retrospective simulation, not real trades. Entry next-day open + slippage, exit stop -5% / target +8% / day 10, fees included, 25% tax not deducted in P&L.', strong: bt.strong12m.tradeList, base: bt.base12m.tradeList };
+fs.writeFileSync('backtest_trades.json', JSON.stringify(trades12, null, 1));
+for (const k of Object.keys(bt)) if (bt[k]?.tradeList) delete bt[k].tradeList;
 const gate = k => { const x = st[k]; return !!(x.n >= THRESH.minN && x.expectancyNetPct >= THRESH.minExpectancyNetPct && x.firstPeriod.n >= THRESH.minPeriodN && x.secondPeriod.n >= THRESH.minPeriodN && x.firstPeriod.expectancyNetPct > 0 && x.secondPeriod.expectancyNetPct > 0 && x.maxDrawdownR <= THRESH.maxDrawdownR); };
 const final = [];
 for (const c of cands) {
