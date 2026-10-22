@@ -1,0 +1,25 @@
+name: event-momentum-study
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  study:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: data pipeline
+        run: cd eventstudy && node pipeline.mjs
+      - name: event study
+        run: cd eventstudy && node research_events.mjs
+      - name: momentum study
+        run: cd eventstudy && node research_momentum.mjs
+      - name: publish
+        run: |
+          git config user.name screener && git config user.email screener@users.noreply.github.com
+          git add eventstudy/calendar.json eventstudy/research_events.json eventstudy/research_momentum.json eventstudy/momentum_now.json
+          (git diff --cached --quiet || (git commit -m 'event + momentum study' && git pull --rebase -q; git push))
