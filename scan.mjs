@@ -2,7 +2,7 @@
 import fs from 'node:fs';
 const OUT = 'events.json';
 const GEMINI_KEY = process.env.GEMINI_API_KEY || '';
-const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash-lite';
+const MODEL = process.env.GEMINI_MODEL || 'gemini-3.5-flash-lite';
 const gn = (q, he) => `https://news.google.com/rss/search?q=${encodeURIComponent(q + ' when:1d')}&hl=${he ? 'he&gl=IL&ceid=IL:he' : 'en-US&gl=US&ceid=US:en'}`;
 const FEEDS = [
   ['Google News EN: Trump/tariffs', gn('Trump tariffs OR sanctions OR "executive order"')],
@@ -51,7 +51,7 @@ function ruleMatch(title) {
 }
 async function llm(batch) {
   if (!GEMINI_KEY || !batch.length) return null;
-  const prompt = `You analyze news headlines (Hebrew or English) for stock-market relevance for a Tel Aviv + US investor. For each headline, decide if it contains a political statement, government action, security event or announcement likely to move specific stocks/sectors. Return JSON array: [{"i":index,"relevant":bool,"theme":"short English theme","tickers":[{"symbol":"Yahoo symbol, Tel Aviv uses .TA","direction":"up|down","why_he":"short Hebrew reason"}],"confidence":0-1,"summary_he":"one Hebrew sentence"}]. Be conservative: relevant=false for gossip, opinion, routine news. Confidence above 0.75 only for clear, material, named-company or sector-wide effects. Never invent tickers you are unsure of.\n\n` + batch.map((e, i) => `${i}. [${e.source}] ${e.title}`).join('\n');
+  const prompt = `You analyze news headlines (Hebrew or English) for stock-market relevance for a Tel Aviv + US investor. For each headline, decide if it contains a political statement, government action, security event or announcement likely to move specific stocks/sectors. Return JSON array: [{"i":index,"relevant":bool,"theme":"short English theme","tickers":[{"symbol":"Yahoo symbol, Tel Aviv uses .TA","direction":"up|down","why_he":"short Hebrew reason"}],"confidence":0-1,"summary_he":"one Hebrew sentence"}]. Be conservative: relevant=false for gossip, opinion, routine news. Confidence above 0.85 only for clear, material, named-company or sector-wide effects. Never invent tickers you are unsure of.\n\n` + batch.map((e, i) => `${i}. [${e.source}] ${e.title}`).join('\n');
   const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${GEMINI_KEY}`, {
     method: 'POST', headers: { 'content-type': 'application/json' },
     body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', temperature: 0.1 } }),
@@ -82,7 +82,7 @@ batch.forEach((e, i) => {
   const conf = a ? Number(a.confidence) || 0 : 0.3;
   newEvents.push({ id: Buffer.from(e.k).toString('base64url').slice(0, 24) + e.ts.toString(36), ts: e.ts, title: e.title, link: e.link, source: e.source,
     theme: a?.theme || e.themes.map(t => t.id).join(','), themes_he: e.themes.map(t => t.label), summary_he: a?.summary_he || '', tickers, confidence: conf,
-    analyzed_by: a ? 'ai+rules' : 'rules', high_confidence: !!a && conf >= 0.75 && tickers.length > 0 });
+    analyzed_by: a ? 'ai+rules' : 'rules', high_confidence: !!a && conf >= 0.85 && tickers.length > 0 });
 });
 const mark = {}; for (const e of fresh) mark[e.k] = e.ts;
 const seen = { ...prev.seen, ...mark };
