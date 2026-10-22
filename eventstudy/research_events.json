@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-22T10:51:16.691Z",
+ "generatedAt": "2026-10-22T11:10:55.119Z",
  "trials": 72,
- "eventsTotal": 13900,
- "eventsUsable": 9555,
- "droppedNoBars": 33,
+ "eventsTotal": 13951,
+ "eventsUsable": 9565,
+ "droppedNoBars": 34,
  "trainPeriodEnds": "2026-02-03",
  "testPeriodFrom": "2026-02-03",
  "note": "Post-earnings drift study. Event = earnings report date from Nasdaq calendar (includes actual EPS, consensus, surprise% for past dates). Calendar gives no BMO/AMC time for past dates, so the reaction window is the first TWO trading days >= report date (covers both). Signal needs surprise% >= sMin AND 2-day reaction move >= mMin% AND window volume >= vMin x 20-day avg. Entry at open of the day after the window (no lookahead), exits stop/target/time, slippage 0.1-0.6%/side by liquidity, 0.4% fees. Universe: market cap $300M-$10B as reported by the calendar endpoint. Variants searched on TRAIN only; 3 best locked; evaluated once on TEST. CAVEATS: (1) survivorship - bars could not be fetched for some past reporters (likely delisted); dropping them overstates returns, count reported. (2) marketCap is as reported by the endpoint, may reflect a later snapshot. (3) 72 correlated trials - a good train result can be luck. (4) surprise coverage ~73% of calendar rows.",
@@ -21,9 +21,9 @@
     "hold": 30
    },
    "train": {
-    "n": 735,
-    "expectancyNetPct": 1.27,
-    "winRatePct": 48.8
+    "n": 736,
+    "expectancyNetPct": 1.29,
+    "winRatePct": 48.9
    },
    "test": {
     "n": 486,
@@ -42,9 +42,9 @@
     "hold": 30
    },
    "train": {
-    "n": 536,
-    "expectancyNetPct": 0.97,
-    "winRatePct": 47.2
+    "n": 537,
+    "expectancyNetPct": 1,
+    "winRatePct": 47.3
    },
    "test": {
     "n": 322,
@@ -63,7 +63,7 @@
     "hold": 30
    },
    "train": {
-    "n": 839,
+    "n": 843,
     "expectancyNetPct": 0.92,
     "winRatePct": 47.7
    },
@@ -75,6 +75,6 @@
   }
  ],
  "anyPositiveOutOfSample": false,
- "medianTrainExpectancyAllVariants": -0.16,
+ "medianTrainExpectancyAllVariants": -0.14,
  "medianTestExpectancyAllVariants": -2.08
 }

@@ -1,18 +1,144 @@
 {
- "generatedAt": "2026-10-22T10:51:19.552Z",
+ "generatedAt": "2026-10-22T11:11:01.596Z",
  "trials": 64,
- "universeSize": 0,
- "trainWindowsEnd": "2025-12-05",
- "testFrom": "2025-12-05",
+ "universeSize": 2290,
+ "universeSource": "earnings-reporters (universe_dir was empty)",
+ "trainWindowsEnd": "2026-02-19",
+ "testFrom": "2026-02-19",
  "note": "Cross-sectional momentum rotation. Every W trading days rank the $300M-$10B universe by past L-day return (skipping last S days), buy top N equal weight at next open, exit at next open next rebalance. Costs: slippage 0.1-0.6%/side by liquidity + 0.4% round-trip fees charged EVERY window per position (conservative - names that persist are overcharged). Filters: price>=$3, ADV>=$5M, optional above-50dma trend, optional SPY>50dma regime. Variants searched on TRAIN windows only; 3 locked; evaluated once on TEST. CAVEATS: current-universe survivorship (delisted names missing overstates returns); 64 correlated trials; rebalance-day prices from delayed Nasdaq data.",
- "locked": [],
+ "locked": [
+  {
+   "variant": {
+    "L": 21,
+    "S": 0,
+    "N": 20,
+    "W": 21,
+    "trend": true,
+    "reg": true
+   },
+   "train": {
+    "windows": 10,
+    "meanNetPctPerWindow": 6.66,
+    "spyPctPerWindow": 1.82,
+    "excessPct": 4.83,
+    "winRatePct": 80
+   },
+   "test": {
+    "windows": 5,
+    "meanNetPctPerWindow": 0.39,
+    "spyPctPerWindow": 1.09,
+    "excessPct": -0.7,
+    "winRatePct": 60
+   }
+  },
+  {
+   "variant": {
+    "L": 21,
+    "S": 0,
+    "N": 20,
+    "W": 21,
+    "trend": true,
+    "reg": false
+   },
+   "train": {
+    "windows": 11,
+    "meanNetPctPerWindow": 6.65,
+    "spyPctPerWindow": 2.25,
+    "excessPct": 4.4,
+    "winRatePct": 82
+   },
+   "test": {
+    "windows": 7,
+    "meanNetPctPerWindow": 1.54,
+    "spyPctPerWindow": 2.23,
+    "excessPct": -0.7,
+    "winRatePct": 71
+   }
+  },
+  {
+   "variant": {
+    "L": 21,
+    "S": 0,
+    "N": 20,
+    "W": 21,
+    "trend": false,
+    "reg": false
+   },
+   "train": {
+    "windows": 11,
+    "meanNetPctPerWindow": 6.12,
+    "spyPctPerWindow": 2.25,
+    "excessPct": 3.87,
+    "winRatePct": 73
+   },
+   "test": {
+    "windows": 7,
+    "meanNetPctPerWindow": 1.6,
+    "spyPctPerWindow": 2.23,
+    "excessPct": -0.63,
+    "winRatePct": 71
+   }
+  }
+ ],
  "anyPositiveOutOfSample": false,
- "medianTrainAllVariants": null,
- "medianTestAllVariants": null,
+ "medianTrainAllVariants": 1.8,
+ "medianTestAllVariants": -0.65,
  "lastTwoMonths": {
   "label": "TINY noisy sample (~9 weekly / 2 monthly windows) - indication only, not evidence",
   "cutFrom": "2026-08-19",
-  "locked": [],
-  "medianRecentAllEligible": null
+  "locked": [
+   {
+    "variant": {
+     "L": 21,
+     "S": 0,
+     "N": 20,
+     "W": 21,
+     "trend": true,
+     "reg": true
+    },
+    "recent": {
+     "windows": 1,
+     "meanNetPctPerWindow": 0.1,
+     "spyPctPerWindow": 0.87,
+     "excessPct": -0.77,
+     "winRatePct": 100
+    }
+   },
+   {
+    "variant": {
+     "L": 21,
+     "S": 0,
+     "N": 20,
+     "W": 21,
+     "trend": true,
+     "reg": false
+    },
+    "recent": {
+     "windows": 1,
+     "meanNetPctPerWindow": 0.1,
+     "spyPctPerWindow": 0.87,
+     "excessPct": -0.77,
+     "winRatePct": 100
+    }
+   },
+   {
+    "variant": {
+     "L": 21,
+     "S": 0,
+     "N": 20,
+     "W": 21,
+     "trend": false,
+     "reg": false
+    },
+    "recent": {
+     "windows": 1,
+     "meanNetPctPerWindow": 0.34,
+     "spyPctPerWindow": 0.87,
+     "excessPct": -0.53,
+     "winRatePct": 100
+    }
+   }
+  ],
+  "medianRecentAllEligible": -1.3
  }
 }
