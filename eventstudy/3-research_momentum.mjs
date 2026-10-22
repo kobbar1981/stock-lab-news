@@ -18,6 +18,8 @@ const SP = (j2?.data?.tradesTable?.rows || []).map(r => { const [m, dd, y] = r.d
 console.log('SPY bars:', SP.length);
 const spyReg = {}; for (let i = 50; i < SP.length; i++) { let a = 0; for (let k = i - 49; k <= i; k++) a += SP[k][2]; spyReg[dk(SP[i][0])] = SP[i][2] > a / 50; }
 const days = SP.map(b => b[0]);
+let universeSource = 'directory+screener';
+if (!Object.keys(uni).length) { universeSource = 'earnings-reporters (universe_dir was empty)'; for (const s of Object.keys(bars)) if (bars[s] && bars[s].length >= 160) uni[s] = 1; console.log('universe_dir empty - falling back to bars-key universe:', Object.keys(uni).length); }
 // Precompute per-symbol indicator rows: for each bar index: close, open, adv20, sma50flag
 const ind = {};
 for (const s of Object.keys(uni)) {
@@ -33,9 +35,7 @@ for (const s of Object.keys(uni)) {
     ind[s] = { rows, tmap };
   }
 }
-let uniKeys = Object.keys(uni);
-if (!uniKeys.length) { for (const s of Object.keys(bars)) if (bars[s] && bars[s].length >= 160) uni[s] = 1; uniKeys = Object.keys(uni); console.log('universe_dir empty - falling back to bars-key universe:', uniKeys.length); }
-console.log('symbols with indicators:', Object.keys(ind).length);
+console.log('symbols with indicators:', Object.keys(ind).length, 'universeSource:', universeSource);
 // variant grid
 const V = [];
 for (const L of [21, 63]) for (const S of [0, 5]) for (const N of [10, 20]) for (const W of [5, 21]) for (const trend of [false, true]) for (const reg of [false, true])
@@ -81,7 +81,7 @@ const locked = eligible.slice(0, 3);
 const recentCut = days[Math.max(0, days.length - 45)];
 const recent = v => { const w = rec[V.findIndex(x => x === v)].filter(x => x[0] >= recentCut); return st(w); };
 const med = (arr, f) => { const a = arr.map(f).filter(isFinite).sort((x, y) => x - y); return a.length ? +a[Math.floor(a.length / 2)].toFixed(2) : null; };
-const out = { generatedAt: new Date().toISOString(), trials: V.length, universeSize: Object.keys(ind).length, trainWindowsEnd: dk(split), testFrom: dk(split),
+const out = { generatedAt: new Date().toISOString(), trials: V.length, universeSize: Object.keys(ind).length, universeSource, trainWindowsEnd: dk(split), testFrom: dk(split),
   note: 'Cross-sectional momentum rotation. Every W trading days rank the $300M-$10B universe by past L-day return (skipping last S days), buy top N equal weight at next open, exit at next open next rebalance. Costs: slippage 0.1-0.6%/side by liquidity + 0.4% round-trip fees charged EVERY window per position (conservative - names that persist are overcharged). Filters: price>=$3, ADV>=$5M, optional above-50dma trend, optional SPY>50dma regime. Variants searched on TRAIN windows only; 3 locked; evaluated once on TEST. CAVEATS: current-universe survivorship (delisted names missing overstates returns); 64 correlated trials; rebalance-day prices from delayed Nasdaq data.',
   locked: locked.map(r => ({ variant: r.v, train: r.train, test: r.test })),
   anyPositiveOutOfSample: locked.some(r => r.test.windows >= 5 && r.test.meanNetPctPerWindow > 0 && r.test.excessPct > 0),
