@@ -13,11 +13,11 @@ jobs:
         with:
           node-version: 20
       - name: data pipeline
-        run: cd eventstudy && node pipeline.mjs
+        run: cd eventstudy && node 1-pipeline.mjs
       - name: event study
-        run: cd eventstudy && node research_events.mjs
+        run: cd eventstudy && node 2-research_events.mjs
       - name: momentum study
-        run: cd eventstudy && node research_momentum.mjs
+        run: cd eventstudy && node 3-research_momentum.mjs
       - name: publish
         run: |
           git config user.name screener && git config user.email screener@users.noreply.github.com
