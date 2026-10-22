@@ -14,7 +14,7 @@ const dk = t => new Date(t * 1000).toISOString().slice(0, 10);
 // SPY bars = trading calendar + regime + benchmark
 const f2 = new Date(Date.now() - 800 * 864e5).toISOString().slice(0, 10), t2 = new Date().toISOString().slice(0, 10);
 const j2 = await (await fetch(`https://api.nasdaq.com/api/quote/SPY/historical?assetclass=etf&fromdate=${f2}&limit=1000&todate=${t2}`, { headers: UA, signal: AbortSignal.timeout(25000) })).json();
-const SP = (j2?.data?.tradesTable?.rows || []).map(r => { const [m, dd, y] = r.date.split('/'); return [Date.UTC(+y, +m - 1, +dd) / 1000, num(r.open), num(r.close)]; }).filter(b => isFinite(b[1]) && isFinite(b[2])).sort((a, b) => a[0] - b[0]);
+const SP = (j2?.data?.tradesTable?.rows || []).map(r => { const [m, dd, y] = r.date.split('/'); return [Date.UTC(+y, +m - 1, +dd) / 1000, num(r.open), num(r.close)]; }).filter(b => isFinite(b[0]) && isFinite(b[1]) && isFinite(b[2])).sort((a, b) => a[0] - b[0]);
 console.log('SPY bars:', SP.length);
 const spyReg = {}; for (let i = 50; i < SP.length; i++) { let a = 0; for (let k = i - 49; k <= i; k++) a += SP[k][2]; spyReg[dk(SP[i][0])] = SP[i][2] > a / 50; }
 const days = SP.map(b => b[0]);
@@ -33,6 +33,8 @@ for (const s of Object.keys(uni)) {
     ind[s] = { rows, tmap };
   }
 }
+let uniKeys = Object.keys(uni);
+if (!uniKeys.length) { for (const s of Object.keys(bars)) if (bars[s] && bars[s].length >= 160) uni[s] = 1; uniKeys = Object.keys(uni); console.log('universe_dir empty - falling back to bars-key universe:', uniKeys.length); }
 console.log('symbols with indicators:', Object.keys(ind).length);
 // variant grid
 const V = [];
@@ -70,13 +72,13 @@ for (let vi = 0; vi < V.length; vi++) {
   }
 }
 const allT = rec.flatMap(r => r.map(x => x[0])).sort((a, b) => a - b);
-const split = allT[Math.floor(allT.length * 0.6)];
+const split = allT.length ? allT[Math.floor(allT.length * 0.6)] : days[Math.floor(days.length * 0.6)];
 const st = arr => { const n = arr.length; if (!n) return { n: 0 }; const m = arr.reduce((s, x) => s + x[1], 0) / n; const spy = arr.reduce((s, x) => s + x[2], 0) / n; const w = arr.filter(x => x[1] > 0).length; return { windows: n, meanNetPctPerWindow: +m.toFixed(2), spyPctPerWindow: +spy.toFixed(2), excessPct: +(m - spy).toFixed(2), winRatePct: +(w / n * 100).toFixed(0) }; };
 const rows = V.map((v, i) => ({ v, train: st(rec[i].filter(x => x[0] < split)), test: st(rec[i].filter(x => x[0] >= split)) }));
 const eligible = rows.filter(r => r.train.windows >= 10).sort((a, b) => b.train.meanNetPctPerWindow - a.train.meanNetPctPerWindow);
 const locked = eligible.slice(0, 3);
 // last ~2 months: windows in final 44 trading days, for locked variants AND median of all eligible
-const recentCut = days[days.length - 45];
+const recentCut = days[Math.max(0, days.length - 45)];
 const recent = v => { const w = rec[V.findIndex(x => x === v)].filter(x => x[0] >= recentCut); return st(w); };
 const med = (arr, f) => { const a = arr.map(f).filter(isFinite).sort((x, y) => x - y); return a.length ? +a[Math.floor(a.length / 2)].toFixed(2) : null; };
 const out = { generatedAt: new Date().toISOString(), trials: V.length, universeSize: Object.keys(ind).length, trainWindowsEnd: dk(split), testFrom: dk(split),
