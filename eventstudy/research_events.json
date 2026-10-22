@@ -1,0 +1,80 @@
+{
+ "generatedAt": "2026-10-22T10:51:16.691Z",
+ "trials": 72,
+ "eventsTotal": 13900,
+ "eventsUsable": 9555,
+ "droppedNoBars": 33,
+ "trainPeriodEnds": "2026-02-03",
+ "testPeriodFrom": "2026-02-03",
+ "note": "Post-earnings drift study. Event = earnings report date from Nasdaq calendar (includes actual EPS, consensus, surprise% for past dates). Calendar gives no BMO/AMC time for past dates, so the reaction window is the first TWO trading days >= report date (covers both). Signal needs surprise% >= sMin AND 2-day reaction move >= mMin% AND window volume >= vMin x 20-day avg. Entry at open of the day after the window (no lookahead), exits stop/target/time, slippage 0.1-0.6%/side by liquidity, 0.4% fees. Universe: market cap $300M-$10B as reported by the calendar endpoint. Variants searched on TRAIN only; 3 best locked; evaluated once on TEST. CAVEATS: (1) survivorship - bars could not be fetched for some past reporters (likely delisted); dropping them overstates returns, count reported. (2) marketCap is as reported by the endpoint, may reflect a later snapshot. (3) 72 correlated trials - a good train result can be luck. (4) surprise coverage ~73% of calendar rows.",
+ "trainPositiveVariants": 29,
+ "eligibleVariants": 72,
+ "locked": [
+  {
+   "variant": {
+    "sMin": 10,
+    "mMin": 5,
+    "vMin": 1.5,
+    "reg": true,
+    "stop": 12,
+    "tgt": 30,
+    "hold": 30
+   },
+   "train": {
+    "n": 735,
+    "expectancyNetPct": 1.27,
+    "winRatePct": 48.8
+   },
+   "test": {
+    "n": 486,
+    "expectancyNetPct": -2.22,
+    "winRatePct": 34.2
+   }
+  },
+  {
+   "variant": {
+    "sMin": 10,
+    "mMin": 5,
+    "vMin": 2.5,
+    "reg": true,
+    "stop": 12,
+    "tgt": 30,
+    "hold": 30
+   },
+   "train": {
+    "n": 536,
+    "expectancyNetPct": 0.97,
+    "winRatePct": 47.2
+   },
+   "test": {
+    "n": 322,
+    "expectancyNetPct": -1.36,
+    "winRatePct": 35.1
+   }
+  },
+  {
+   "variant": {
+    "sMin": 5,
+    "mMin": 5,
+    "vMin": 1.5,
+    "reg": true,
+    "stop": 12,
+    "tgt": 30,
+    "hold": 30
+   },
+   "train": {
+    "n": 839,
+    "expectancyNetPct": 0.92,
+    "winRatePct": 47.7
+   },
+   "test": {
+    "n": 546,
+    "expectancyNetPct": -2.44,
+    "winRatePct": 34.1
+   }
+  }
+ ],
+ "anyPositiveOutOfSample": false,
+ "medianTrainExpectancyAllVariants": -0.16,
+ "medianTestExpectancyAllVariants": -2.08
+}

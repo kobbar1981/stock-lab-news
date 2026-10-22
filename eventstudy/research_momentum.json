@@ -1,0 +1,18 @@
+{
+ "generatedAt": "2026-10-22T10:51:19.552Z",
+ "trials": 64,
+ "universeSize": 0,
+ "trainWindowsEnd": "2025-12-05",
+ "testFrom": "2025-12-05",
+ "note": "Cross-sectional momentum rotation. Every W trading days rank the $300M-$10B universe by past L-day return (skipping last S days), buy top N equal weight at next open, exit at next open next rebalance. Costs: slippage 0.1-0.6%/side by liquidity + 0.4% round-trip fees charged EVERY window per position (conservative - names that persist are overcharged). Filters: price>=$3, ADV>=$5M, optional above-50dma trend, optional SPY>50dma regime. Variants searched on TRAIN windows only; 3 locked; evaluated once on TEST. CAVEATS: current-universe survivorship (delisted names missing overstates returns); 64 correlated trials; rebalance-day prices from delayed Nasdaq data.",
+ "locked": [],
+ "anyPositiveOutOfSample": false,
+ "medianTrainAllVariants": null,
+ "medianTestAllVariants": null,
+ "lastTwoMonths": {
+  "label": "TINY noisy sample (~9 weekly / 2 monthly windows) - indication only, not evidence",
+  "cutFrom": "2026-08-19",
+  "locked": [],
+  "medianRecentAllEligible": null
+ }
+}
