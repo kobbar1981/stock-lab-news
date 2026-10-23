@@ -1,5 +1,5 @@
 {
- "updated": 1792775796982,
+ "updated": 1792787467053,
  "feeds": [
   {
    "name": "Google News EN: Trump/tariffs",
@@ -19,12 +19,12 @@
   {
    "name": "Google News EN: oil",
    "ok": true,
-   "n": 65
+   "n": 53
   },
   {
    "name": "Google News HE: ביטחון",
    "ok": true,
-   "n": 100
+   "n": 95
   },
   {
    "name": "Google News HE: כלכלה",
@@ -49,11 +49,1530 @@
   {
    "name": "Yahoo Finance",
    "ok": true,
-   "n": 17
+   "n": 19
   }
  ],
  "ai_enabled": true,
  "events": [
+  {
+   "id": "dHJ1bXAgZXhwZWN0ZWQgdG8gmvleu82w",
+   "ts": 1792786577000,
+   "title": "Trump Expected To Dismiss Some 50% Tariffs On Canada: Report - Yahoo",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTUFhWGhTemxucWs3UnZKVXRfVXdmX0hDTUk3UW5XbmNianV4TW9aNjBzSHV2WlBmeTZIMGVXVGIwMHRpN3lqd0ZrazBmUm1Td2tINzBzU1U5c0pjYXFXZEpkeUlvN1Q4QUI0VHA3RUZOcGQ2SXc1U3NJTWw5N0ZPclczbWU4a1gtMGwxa3Fkb2ZyYmZGc2RFQw?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "Canada Tariffs Relief",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "הממשל האמריקאי צפוי להסיר חלק מהמכסים על קנדה, מה שעשוי להקל על סקטורים מסוימים.",
+   "tickers": [
+    {
+     "symbol": "ENB.TO",
+     "direction": "up",
+     "why_he": "הסרת מכסים על מוצרים מסוימים מקנדה מקלה על חברות אנרגיה ולוגיסטיקה."
+    }
+   ],
+   "confidence": 0.88,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "dHJ1bXAgc2lnbmFscyBwb3Nzmvleqqb4",
+   "ts": 1792786414000,
+   "title": "Trump Signals Possible New Iran Strike While Debating War’s End, Senators Warn of Rising Fuel Costs - Forth.News",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBlRlQ4RC05UmV2WVRmdnowTF9pcjNIXzNmRFFsOXZCRldFdm5lMTdDbFBsa0lTOFEwYlFNTzNsWHdqU3U3WUgtTmxCQXF1LUVTbFlyUzczb3ZGenRJOE9vcm53?oc=5",
+   "source": "Google News EN: Iran/Israel",
+   "theme": "Iran Tensions and Oil Prices",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "איומים בתקיפה באיראן וחשש לעליית מחירי הדלק משפיעים על שוקי האנרגיה.",
+   "tickers": [
+    {
+     "symbol": "XOM",
+     "direction": "up",
+     "why_he": "חשש מעימות מול איראן מקפיץ את מחירי הנפט ותומך בחברות האנרגיה."
+    }
+   ],
+   "confidence": 0.9,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "b24gbWVpZGFzIGRlZmVuc2Ugmvlem89s",
+   "ts": 1792786204000,
+   "title": "On Meidas Defense: cryptocurrency, sanctions, and Trump quid pro quo - Citation Needed by Molly White",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0wYXFKeC1kTmVnaFhCdDdweVVrRy1JdG5kZlgyczc3M0l3aTQtX3UxMmhtOEctcm1zbk5aYVp2eXdqSFA5TWY2eE5sNlNVVWg4cko3aGxYVTlmeXNIVlg2aEdRck9oS3V6?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "ZW1iYXR0bGVkIHN1c2FuIGNvmvlekuw0",
+   "ts": 1792786140000,
+   "title": "Embattled Susan Collins announces exemptions for Maine from Trump Canada tariffs - The Guardian",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcUpnNzNYZ2JLYkpCeXo4U0p1dERRR0FEXzJzTTg1WGRZXzE2bkRYWk9XSm9MVy1JRmlidDBscWdWcjc0NUsyTnlRUVZiN2loYTl1dFVxZjZoZGs5bHVVWFlacm4zVHZwQXlvVmk1aU1HNGpFa3J5UU84RXlDWlhBOUxHOGtuS296b1VJVGFlc0V2Zw?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "16DXoteZ15zXlCDXkNeT15XXmvlefppc",
+   "ts": 1792785900000,
+   "title": "נעילה אדומה בוול סטריט: דאו ג'ונס איבד יותר מאחוז; מחיר הנפט בעלייה",
+   "link": "https://www.globes.co.il/news/article.aspx?did=1001560609#utm_source=RSS",
+   "source": "Globes",
+   "theme": "Wall Street Decline and Oil Rise",
+   "themes_he": [
+    "נפט/אנרגיה"
+   ],
+   "summary_he": "וול סטריט ננעלה בירידות חדות כאשר מחירי הנפט ממשיכים לעלות.",
+   "tickers": [
+    {
+     "symbol": "^DJI",
+     "direction": "down",
+     "why_he": "ירידות שערים חדות במדד דאו ג'ונס במסחר בוול סטריט."
+    }
+   ],
+   "confidence": 0.95,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "dHJ1bXAgdG8gZWFzZSA1MCBjmvleexxc",
+   "ts": 1792785864000,
+   "title": "Trump to ease 50% Canada tariffs on farm equipment, packaging goods - InvestmentNews",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNa2o5TGV1blo1VTFoSmlGeWc3bTFNSDZhZkxaWEp4M05nX2NRWWhLZzQ4UzBzNkZXaDJxdHMzZ0RKcEtiQXhRU0xELUZNMkFlUWN3NkFSdzhQMEhlOC1YeWtwXzB3dUc3eVItNmVOZlRaaGRNODJadE51TVFGYl9ubmpjZUhQRnpGcm9fQXVOcEZKNy1OYWhvcjM3YWNmR25zQ19oMXZfZjIwRWVJYUdEUTln?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "dHJ1bXAgdG8gbG93ZXJzIHNvmvleeqzc",
+   "ts": 1792785855000,
+   "title": "Trump to lowers some Canada tariffs to help Maine lawmaker’s re-election bid - South China Morning Post",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQQm5oSHZCeEM4d2xiVGN6NGJ5Y1M5TmxYNjhUczNvSHpOMVUwYTBCVDVJazAyaXplcUVnQndoTzRDd2I1Wmhsc3VVbkU2S3pNRWZpcWxuc1BDQU5VelYwenlNcXQxaVVhUTlrT0p1R180aTg5OWpiTTVRYWxQVUg4UGN5NlI2RFNSbXNJcU5PSTJEcDZJVmJhM3RPd1p3UlV3dUgtbm84Q21NUEg1cF83V3dQY0xYSkl6cnhicVFKSnJyR1AtX1BZSFp2YUJFclV6QThDd9IB1AFBVV95cUxQTjdReFp6NlV6Wk54ZlQ1TFpXV3VyYVVGbnlmS3FFUWkzaVpVVXJnemVTSG9vTVNhZS1OS1p4Rnhxb3J4T1lIYzFoZGVtaFExWlNTVnR3bUM0S29wcVZoSnhrQk9Wb0JvWFZBV3FMNnRXSVN6NTQ5ckYyZXpJNllYTktWN2lWY0ZWU21sakZGdy1vR3NUOExOX0gtdDgzbEFibXFsYzNfM0ZfTUx4V2JIbDVCUmVyeG9sYmVVQ1hkaHViZm82eU9EMTZqWlA0NlN6YWhaRg?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "dHJ1bXAgcm9sbHMgYmFjayBzmvleegy8",
+   "ts": 1792785842000,
+   "title": "Trump rolls back some Canada tariffs as midterm election approaches - The Washington Post",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOclp5T1pZS2MxZFdLYUhNbTFJemF5dGxFTERtSnowODVOQVJPOUR4YUo0NTRmRDFtOUJpb185Vll4QjdLeExiaDk2ZUY5YW1vOGtiak1kbDRJQjNlRjlsU09CUlF6Y0stWkZ4NFNMRnE0bk5jelpKUkRTTXRvV2t3V09FUktPb05oYUlvbTdmeHI2b2tOTnAzT2dTcmc5RGFrR0xaeDJ3Y0lrUlJBWVQ3NGJ6Um5yZmhfdnNJ?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "dHJ1bXAgcmVtb3ZlcyA1MCB0mvleegy8",
+   "ts": 1792785842000,
+   "title": "Trump removes 50% tariffs on Canadian products to try to boost to Maine companies - Central Oregon Daily",
+   "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOcXRmVk1rTVBqdTJMOFYxeWo3eXNjcVJPMC0ybkMtZVh1ZXZXWmduTUo1VUFIYzBEU1ZNMlNOT3h5dVl4UVZObllnRVFidDdyZklTYUNHSWg5ZU14T2IyTFhwRl9laWdkWTRMa0wzUENKc29RTDdOZUw2QjVxMF8yeVlmYkIycHAwT08xV1BpWkhteUphVFo2aFhKOTJIaThzT0luSFNOdWhiSDFFaTI4REoxU0dBSHZIUEpGdmNHVUVRQ29RSE16clhNbHllLVJ6UWd5UkhzZGFqM2NpX3lTMF9lNFNyemtXSFNtQ21YWXB0Ui10SkxnbEhZcnVySHVhUGR4R2ZIS3VBZ0E?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "ZG9uYWxkIHRydW1wIHRvIGN1mvlee2ag",
+   "ts": 1792785823000,
+   "title": "Donald Trump to cut Canadian tariffs after pressure from Republicans - Financial Times",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTmIteHZVMmhna3VxTkZLbEhfU2hWRS1xS3hGYXYxVnJwMXVaX3hZNEdHX1RacXpjWDZDRS00Z0lJOTh1eno0eF91SzR3V0ZpZ25YWk5GdGFuOW51NV9uY1NEc2hsYlE2YXM0T3B6RENqdS1kaGFUV0NiNE9FcGF3X0FQNHo?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "dHJ1bXAgYWRtaW5pc3RyYXRpmvledoeg",
+   "ts": 1792785805000,
+   "title": "Trump administration cancels some Canada tariffs amid close midterm races - NBC News",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVElRUlRYNE1DeV9WMkYwaXlScS01OTI1MVotc2Rob1AtZW90Tk13eGJuWWFhOVpEQndDUzBZeFQ3ZFlQcWJJZ0ZZdDdtaFlnTHg2WjdTT25wVm1FUkNEMFQwakN0c2NidkVrUlRseEJCd0g3cW1haXJVS1dhVURvWm9iTldyQWZPOHFjS1dIdVBtZk5nTmk5a3NB?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "cml5YWRoIG1pc3NpbGUgc3Rymvle9a80",
+   "ts": 1792785600000,
+   "title": "Riyadh missile strike victim buried in Bogura - New Age BD",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNbGR1VWhLVTRkdWk2SncxSlc4VGFrQU5Vd0sxR2hmMklUcUttaDBLNWt0MDRUNThHWmhIZGpkN3JXR1h3LUMzb0Z4dXZJTExaQ3lEc21rV0ZLcjdwS2pnbHBncUJNZlRpUU4wUnZCbWhzbFE0YV9SSFlzOGJrVFRVOXNiVVBiTEs0RVh2M3NSSEFWZWpf?oc=5",
+   "source": "Google News EN: Iran/Israel",
+   "theme": "security-israel",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "ESLT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ESLT.TA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LMT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "NOC",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ITA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LUMI.TA",
+     "direction": "down",
+     "why_he": "ביטחון/איראן/טילים"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "dHJ1bXAgcG9pc2VkIHRvIGxpmvle6h54",
+   "ts": 1792785469000,
+   "title": "Trump poised to lift 50% tariffs on some Canadian products - Wealth Professional",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNM0ctOU9tTHdvaDY5WHR0RG53ZXZnVnpITEFHSzZxVlpyS2hBZnlKb0YwdXFscl9PNmtYQUhKTFd2OXNiSXlnNzBTOHpmTURxeXdCNHV5Wi01MHc0NW1McGw3aTVsNlBILTctdkJvZFMxcTJtNEtHLTc2ZkZwUFhiWEstbG9iU1R5RnY0R1pCTE1ZLUtuaGZObWUxZlVDa2Z4NE0xRDZsT29RZDRLakxWMzlNUjdkOXg0aUQ4cEFWWDRzOW8?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "ZmFpbGVkIGhvdXRoaSBiYWxsmvldxfiw",
+   "ts": 1792785047000,
+   "title": "Failed Houthi Ballistic Missile Launch Kills Family in Eastern Sanaa - وكالة خبر للأنباء",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5zNUxBOUM0VThSa2ZVU09vYTJVeUVBd1BTVWVoSDIwUmtWYXNnNy1HLVVWQkV4S2M4cU5Najdjd0JrMXVHamJ2Y0k1MTN1cS1zbXBRYVN1OA?oc=5",
+   "source": "Google News EN: Iran/Israel",
+   "theme": "security-israel",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "ESLT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ESLT.TA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LMT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "NOC",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ITA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LUMI.TA",
+     "direction": "down",
+     "why_he": "ביטחון/איראן/טילים"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "dXBkYXRlIHVzIGVxdWl0eSBpmvldtg08",
+   "ts": 1792784861000,
+   "title": "Update: US Equity Indexes Fall as Rising Iran Tensions Push Crude Oil Higher",
+   "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-fall-rising-194741306.html?.tsrc=rss",
+   "source": "Yahoo Finance",
+   "theme": "Iran Tensions Push Oil Higher",
+   "themes_he": [
+    "ביטחון/איראן/טילים",
+    "נפט/אנרגיה"
+   ],
+   "summary_he": "מדדי המניות בארה\"ב יורדים על רקע חשש מהסלמה מול איראן ועליית מחירי הנפט.",
+   "tickers": [
+    {
+     "symbol": "USO",
+     "direction": "up",
+     "why_he": "המתיחות מול איראן דוחפת את מחירי הנפט כלפי מעלה ופוגעת במדדי המניות."
+    }
+   ],
+   "confidence": 0.9,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "dXMgYW1iYXNzYWRvciB0byB0mvldo0sg",
+   "ts": 1792784608000,
+   "title": "US Ambassador to Turkey: Could there be an Iran strike this weekend? Absolutely - Israel National News",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBSQk5pcnJTY2h6ODdoZ3h3Zk1RY1lfS2V6SHFGNUVobGVUc0dUYjdycjk3Y0N1ZFVvZmhISXJCd3RDazdtOEVyVzFtSkI5dW5rM3pzaGZqRUlTdw?oc=5",
+   "source": "Google News EN: Iran/Israel",
+   "theme": "security-israel",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "ESLT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ESLT.TA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LMT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "NOC",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ITA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LUMI.TA",
+     "direction": "down",
+     "why_he": "ביטחון/איראן/טילים"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "15DXmdeo15DXnyDXmNeV16LXmvldiemo",
+   "ts": 1792784346000,
+   "title": "איראן טוענת: שתי מכליות נפט נפגעו ממוקשים ימיים באזור מצר הורמוז - מעריב",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9LSWlnaHlWUUpGSDlndWR2M3pDMVNZdjhGYVN3c1lkdVh2ekhwQ0hXeFBtd1BBOUhTR2tLYkdCRFgzSDVCUEw4OGYycHNRR2JrU1JtMG5hdkNZQmtyWTc4c2hzOE8?oc=5",
+   "source": "Google News HE: ביטחון",
+   "theme": "security-israel,oil",
+   "themes_he": [
+    "ביטחון/איראן/טילים",
+    "נפט/אנרגיה"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "ESLT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ESLT.TA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LMT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "NOC",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ITA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LUMI.TA",
+     "direction": "down",
+     "why_he": "ביטחון/איראן/טילים"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "dXMgaGludHMgYXQgcG9zc2limvldeiyw",
+   "ts": 1792784165000,
+   "title": "US hints at possible strikes on Iran this weekend - Latest news from Azerbaijan",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBFTUE0aHJ3Qm9hVlJGeGRNTzRBbFljc0MybVBlVjhxWmR6Z244YkpuRUVCa25TdUcxVHozTTlTZzUyNmxjSnZaWTZHWDdnQVJURjZ2NUY0UXFzNzViM2s4bTRHczhFYUZOdlljSERreE1lV1ZXNlNaLTlR?oc=5",
+   "source": "Google News EN: Iran/Israel",
+   "theme": "security-israel",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "ESLT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ESLT.TA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LMT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "NOC",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ITA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LUMI.TA",
+     "direction": "down",
+     "why_he": "ביטחון/איראן/טילים"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "Y29uc3VtZXIgc2VudGltZW50mvlde180",
+   "ts": 1792784142000,
+   "title": "Consumer sentiment nears record low as inflation fears rise - Finance & Commerce",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZlU5N2N4REhnTGVHZVVFZHJndjNXYTdRMm5fMERvR2tRQjBkUEhkeU42WGtEOHoyYzVUdlpBVnhpMFBiNnVOaDFUTk5pc0ViS2FkSGpGbHZFSndQS2hSMjY5Uy1PbWQyeEl6MWE2SnRoOVZ6a3pLS00yYzRPcm1JUmd1dXNJTmdSRHF0TmJRNUZ4cVZnSE5jM1B4UTlSOEU?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "rates",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "JPM",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "XLF",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "LUMI.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "POLI.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "DSCT.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "ZmVkZXJhbCByZXNlcnZlIHZvmvldd4tc",
+   "ts": 1792784100000,
+   "title": "Federal Reserve Votes Unanimously to Raise Rates 25 Basis Points to 3.75%-4.00%; Warsh Defies White House Pressure to Launch Tightening Cycle - BigGo Finance",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBiUlVZRmEyWHF1andZbE5mUUV6TmFIX1VZZkVQd0RkbDJDRTlqMGVGRzg5ZV90QjV4dWU2Z012eWhpYkxyYkE3UDdJSFZWcXhnSjMyek5ycVViRVNQZmNtMGh5MF9VQmpTWGhXd1RCUUNGejZ3M0E?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "Federal Reserve Rate Hike",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "הפדרל ריזרב העלה את הריבית לרמה של 3.75%-4.00% למרות לחצים פוליטיים.",
+   "tickers": [
+    {
+     "symbol": "^IXIC",
+     "direction": "down",
+     "why_he": "העלאת ריבית נוספת של הפדרל ריזרב לוחצת כלפי מטה את שוקי המניות."
+    }
+   ],
+   "confidence": 0.92,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "Y29sbGlucyB0b3V0cyB0cnVtmvldah4w",
+   "ts": 1792783976000,
+   "title": "Collins touts Trump decision to remove some farm products from Canada tariffs - Portland Press Herald - Maine Sunday Telegram",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOclE0Z1pfMXl6VHRPMFd6SDNGelBBNGpsaExuSlJ6dXlhSENIWk85bUtKamZXLXlpMWJFWlhjajhhbmhaZnA0UWo5MkFSOG5DWFlPRTVCZGZXY1lyRE9ubFJFSk5mVXRUSUVEZHQ4VW94SmZHR3ZpMzlTTTlteG9DdkI3Rmd6bXdHZVRRSHhMNDk4aVBPQXhhZlNJR25XVGwyV21GYlpBTG9jTXM0YUllaUljN3JYWkcz?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "Z3Jvd3RoIHRvIHJlbWFpbiBzmvld90o0",
+   "ts": 1792783908000,
+   "title": "Growth to remain strong despite inflation headwinds - www.rbc.com",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPS2JtN2t3R3N4a05fQ0dDbk1OOVowc2hHREo4OEZoSV9HN05RRm5qR1pwUEt3YzJIdFJ0UFJkMEZlR213ZUFERVRxQmpXRWRGci1FT2UxQzQ4eS1najdkaW0tellDZzlQTzl6YXpLRC0xUU1qVVBFYUdRSTYtVUViV0hWUkpHQkxNR2Zjc1lybERBV0dwN0pDVzRRWW9la0s4?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "rates",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "JPM",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "XLF",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "LUMI.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "POLI.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "DSCT.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "YWhlYWQgb2YgdGlnaHQgcmFjmvld47ts",
+   "ts": 1792783684000,
+   "title": "Ahead of Tight Race, Trump Exempts Some Canadian Goods From Tariffs - The New York Times",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMmRoTFhmbklvRWhyYlRzSlJjaENOdnVnbFhIZ1lWa3E1alhpSS1ybXV5M3dabXM0NlVFaktyY3pTd2U1OEFqVGR1bTRuM0x3dUZTNnlNLTZoOVQ4YklZRVJBU3FiNE56QnI1ek45X0RlOW5sZGNVTUFJYkgtbmtKTGRqaE9ESWRVX040?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "dHJ1bXAgZGVjbGluZXMgdGFymvld1cfk",
+   "ts": 1792783550000,
+   "title": "Trump Declines Tariffs On Wind Turbines, For Now - Law360",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbUxaa0N6QnZSRWJTNkxaRVZ4aEN1WUlnWkU5V2JKdXdxa2F2YUpCNU00aUp0WDJFclhYMTE3TEdjZHlNMmhzTlMzR2F3cHMxME9hVDB5VE5QcS1FaG5lZHlPdHppRlJCQlNrRFBmR0NTclJMek96aVNTNTlNT0JBc1M4ZWQ1NjJFZFM1NmhZOHUycTB3eVV3YVNsQkdobk8zcUlDY0RYMjNOQzhX0gFWQVVfeXFMT2xJY2ZWVEpKVXdLUll3R2F0V19nWkRRZElLNkhCcXh0Q0hVOHE4T0lILWpnMkhCbmNJeUlFOTNYWjhHWmxfWk52b2JYTkhDM2JhdFROenc?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "dHJ1bXAgdG8gY3V0IHNvbWUgmvlcucw0",
+   "ts": 1792783224000,
+   "title": "Trump to Cut Some Canada Tariffs in Bid to Aid Maine Senator - Bloomberg.com",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPYjFBMU83aC1GcHBCSm5zbnM4NkRQRmJtOHoycTNVVmd0b0NGTm5RTTVhZ1ktWGR4QTJhaXE5cVd5bm1YY09yMFpsYzF1aWRrVnIzb29BU1VQX1k3Q0VfbWVfc2RjWmFGNnlJRlllbmJxU1hGVkdkbXlDek5kOC1FT3NKeW1sODc4UzFDQzRNQ2F4VzF5Y3hNdzY1MmVKeko1dTJPN2JXRmd3TmpOQjFGU3VR?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "d2hhdCB0byBleHBlY3QgZnJvmvlcs5ew",
+   "ts": 1792783121000,
+   "title": "What To Expect From Wednesday’s Federal Reserve Meeting - Investopedia",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQR1g1MjJqM1A4WVk0SHlYMjhTTjRnZk1rdWZSeVh6QnBmbkhqeEFLMS1uQXN3OVB0VEhCMElnak05UFRLRkV2VVlmVno1YzAyOXFXbS1BanllLVRVUkI2eXI1LWRvcDd1M05nWGtLcmtwTHpjQWw0SkNDdkxhWkxiODNWek9CWmV4Mm81dTRHOTFfczJVYzRZ?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "rates",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "JPM",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "XLF",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "LUMI.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "POLI.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "DSCT.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "dXMgdG8gZHJvcCBzb21lIHRhmvlcpn4w",
+   "ts": 1792783004000,
+   "title": "U.S. to drop some tariffs on Canadian exports, says Maine senator - Vernon Matters",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMGpPb1g2X29lOGpxamtobDVHeWNEX1VwQWNfbmtsazJCSERZV04zQWF6bkJlMmFZaDhPZjkzbFpCaVQ3NUR2VUcxMzBrQWdxT0RNdkJLSjJXVFUtVHMtR21CdDV0SVZjd3RlREo1SjRYbENoSWVTUjJYaElOU0RzTWxEN2kzXzdrQnA2aVNyNUNQem1TQ2VPajRQdzF5TVk4ZF9memo4WGdyek1pSGNDekJmSQ?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "aG93IGV1IHNoaXBzIGFyZSBzmvlcl53k",
+   "ts": 1792782794000,
+   "title": "How EU ships are still able to carry Trump's Russian diesel despite so many sanctions - The Kyiv Independent",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQc3N5czJ3QkdQU1l4UHc5clJOVktvMlNMODV2SnBWNDItUVFYelpkaVpKQ3FGN1BMUmIzWUJvQ1NWek1YQjR0dkJ1RlJVRThWTGFXT2dGQXEyWDlhZC02NnBiV0JyQWZsa183U2kteUppNm5DSTUxQk5tRUozQU5aTWZiUDUxaF9kc3d5dkhWOXhXQS1zcGRRY3NscGU4ckNoWWpXNXlFTHlWbVhwV0FVSm9KSQ?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "dXMgbWF5IHN0cmlrZSBpcmFumvlcl4bs",
+   "ts": 1792782793000,
+   "title": "US may strike Iran this weekend, says envoy - www.galaxytvonline.com",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNN0dZNEpoTGw4WGhWMXNHTHh4NWdGWWVkc0NDWVU1U0t3VzItaEF0MUhaNmRBLU1ZdkJaQTh0d3lZcHFkS0RxYmhKZVBfaFRtajEweHhfWDdUNkNSUVhfR2hVZVI3VUVWR3M5RG1yT05LVllZVjNvNllabXNoemt5WUhLTFUwdk9VRWtmdWRFTmRUTnJkUHc?oc=5",
+   "source": "Google News EN: Iran/Israel",
+   "theme": "security-israel",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "ESLT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ESLT.TA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LMT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "NOC",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ITA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LUMI.TA",
+     "direction": "down",
+     "why_he": "ביטחון/איראן/טילים"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "15TXoNek15gg15bXmdeg16cgmvlcgzeo",
+   "ts": 1792782600000,
+   "title": "הנפט זינק מעל 117 דולר; החשש מהסלמה מול איראן מחזיר את האינפלציה למרכז - ביזפורטל",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0tMWZlbmVvb2ZrVE42aUIzWEd4UGJ3ZjhoVGJ3QVBVVWN5eno0TmZDQms2QzhqTkZvalhxQ2VkbnlNMVc0S1lPWlBIR1JRMmZFTXFHVWduZ3FCNDA4MWl5RjByWDZOejVsT1BmVUM4UHE?oc=5",
+   "source": "Google News HE: ביטחון",
+   "theme": "Oil Surge and Inflation Fear",
+   "themes_he": [
+    "ביטחון/איראן/טילים",
+    "נפט/אנרגיה",
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "מחירי הנפט מזנקים ומחזירים את חששות האינפלציה למרכז הבמה הכלכלית.",
+   "tickers": [
+    {
+     "symbol": "OIL",
+     "direction": "up",
+     "why_he": "זינוק מחירי הנפט מעל 117 דולר עקב חשש מהסלמה ביטחונית מול איראן."
+    }
+   ],
+   "confidence": 0.9,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "eWVtZW4gZGVhdGggdG9sbCBmmvlcey3s",
+   "ts": 1792782505000,
+   "title": "Yemen: Death toll from Houthi missile strike on military camp rises to 60 - News On AIR",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNDFpejZqeFNTTERwQnNvQUpueUQ2eUFHM05QOHgwNXBPM2JUbkZnREFqQ09tQkMyQzFVSGVadHVDeDVLWXBuWXpycXZibE1FQjNpT0tBTVBPTXl2eWxwazF5OXA1STJHWXI5aDR2MkdVLWhnaTNDOEt0ZW1WXzRiajJuVGNDcDlvakxHYk9iMmZxZUlZMWRZOW9iQ3haQkE?oc=5",
+   "source": "Google News EN: Iran/Israel",
+   "theme": "security-israel",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "ESLT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ESLT.TA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LMT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "NOC",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ITA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LUMI.TA",
+     "direction": "down",
+     "why_he": "ביטחון/איראן/טילים"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "YSB0aW1lIG9mIHVuY2VydGFpmvlcdjy8",
+   "ts": 1792782440000,
+   "title": "A Time Of Uncertainty At The Federal Reserve - RealClearMarkets",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdjVGaVRmRENFQTlMREJOcDA2dEFfcXZpMExFM0JqTEtGaTM2Zm54Z0Zic3V5QmM1NUl2c3Mzc1RpYmQ0dmNUQzVKQ2pGd29wZnZuWi1hR1FSWGJpOTN2aUlQc1VfZDJOa3VtY09mMHF1NjNBNHdneWEyVkl4YkczaFQ1TjdVbF9MYU54clcxNVpHZ19oRW9PU3BhSnZFV1Jqa2Fz?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "rates",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "JPM",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "XLF",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "LUMI.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "POLI.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "DSCT.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "d3NqIGRvbmFsZCB0cnVtcCBlmvlc9e9c",
+   "ts": 1792782246000,
+   "title": "WSJ: Donald Trump expected to lift some tariffs to help Susan Collins’ reelection bid - Bangor Daily News",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUEl6MF93cnptN2N0bm9VLW9vSGFuVXptSmFzdmVmVnp3X1RNeDR1RlF0a1dVSjdMUnlOWWtvdm9lbm1RVXdoMDNFbTA2QXI3OHJBdENKNktiRm9Oc1dvV2JmclZhbEwyRW40S1VZZnRSVDFoQnc2TTgtbHVjWU1aVWEtVjF2SFgyVTRHMFlZZlhJN21sd05jNXJkeW1sTEtteGttN04ycmJvMHNfemp1RmZodkR2NHZPOVJ5c3NwNjg?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "d2FzaGluZ3RvbiBjb3VsZCBzmvlc9488",
+   "ts": 1792782233000,
+   "title": "Washington could strike Iran this weekend: US envoy says - Rudaw",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1HWEZCS2FtY0xWSlpLZTZSMnhDVk45dEd1LUlYbWFqX3p5UnZnOVdJOEthU2w2RjFHeXA3NW5UQW1mRkVhbU81NUh4b1A5QURCNFp6Rkl2NXlKdWxmZWFaTk42LWc1Zw?oc=5",
+   "source": "Google News EN: Iran/Israel",
+   "theme": "security-israel",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "ESLT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ESLT.TA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LMT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "NOC",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ITA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LUMI.TA",
+     "direction": "down",
+     "why_he": "ביטחון/איראן/טילים"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "dG9tIGJyYWNrIHRoZSBwb3Nzmvlc5u68",
+   "ts": 1792782080000,
+   "title": "Tom Brack: The possibility of striking Iran within days is very high - صوت الإمارات",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQSEpNSW9VQXNXcTNmenM2eUVzRkh5ejJQbC1lOHhqWVp6QWthZjFudi1QdDRDZTVpM29lVmRyeTN5Qy0tdWZQaEVCckVqb25BTEFmQktYVmRVM0l5TXEzODFHZFltYmhVLWF4XzBMRk1RR1dXQW82ZWVaVldROUV3ME9JdlNBRzg0TWZKRGxaRHVoLUZoMmpNLUR5UW1vWHQ0ODJMcEJZTFZ0ZU12ZWp5UjdYaVlMakRZVEVR?oc=5",
+   "source": "Google News EN: Iran/Israel",
+   "theme": "security-israel",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "ESLT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ESLT.TA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LMT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "NOC",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ITA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LUMI.TA",
+     "direction": "down",
+     "why_he": "ביטחון/איראן/טילים"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "bWFpbmUgc2VuYXRvciBzYXlzmvlc44g0",
+   "ts": 1792782000000,
+   "title": "Maine senator says she secured tariff exemptions for some Canadian goods - Toronto Star",
+   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOWEVQNmdXampDR2JzcnpTYUtDNi14UkFmRExubkRWZlVNZlBNRm5ZNHJ1cEt2OUxyaUF1czZoUnRncVU5bndsQVFMYVpsd29hVzVaRjRPQ0drWWs2bVNfRHR4WDNKOWs2N1N3SHBWMjdZajRxTElFSWJyWkI2UTc1RUFQUDNwQm4tVzhiNFFOX0dHZUptQm1KdGJRVzZ6RGxsS1g0a3RJUlNSdk14UXhFaVZSTWJndWp3UkFUdlRpcW02eE1SalBNNWVwelcwQ05BUDhhSVZjcnpQWFkxUnllVXdTVU04QWZ0LUNFV2FMbm9wbGJGb2VVZGRRMEVpUVRp?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "bWFpbmUgc2VuYXRvciBzYXlzmvlc39kw",
+   "ts": 1792781960000,
+   "title": "Maine senator says ‘tariff exemptions’ coming for some Canadian goods - Global News",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZ1d2cnRJSjZhOTRNcjUtOFBqRjFNc2QyTHhXRExrUlVPbV9PT2k1SlpFMmQxbURqWTYxb3JLSWlRU1VrVXF2NmQyckkwRG9yb2I4azNlSVNwNnJnZUJDUVl0Yl80OHlNdEFfRXNWbWY3YXRoX0otbGpvUUs5MVJJNWJBOWw?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "dHJ1bXAgc2F5cyBoZSBkb2Vzmvlc2vow",
+   "ts": 1792781942000,
+   "title": "Trump says he doesn’t ‘know anything about’ possible US strike on Iran this weekend - The Times of Israel",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVkxLdGgwWXRERkluSldqLWJrdGRLZEhjZlNENGUyYWQwMlRmYUZwckZWeUl6ODhjVWdhbEFtTHQ1ZDg2S0poN2VvQU1XWFBEYzdPTEg1RzMxRFEwWnFyNENPY1QyeThxcjV0RURrcjlHUGNfSXZ1RlpMUWMyazNhN25QRDJ5U3dxeUdDQkdBUXlVMzhreS1RVlo1azdTOHFOVGtweVZpMmZJa2Y1UE5vUTdBT1Azem1YUlVfU1MwOFROdjNC?oc=5",
+   "source": "Google News EN: Iran/Israel",
+   "theme": "security-israel",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "ESLT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ESLT.TA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LMT",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "NOC",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "ITA",
+     "direction": "up",
+     "why_he": "ביטחון/איראן/טילים"
+    },
+    {
+     "symbol": "LUMI.TA",
+     "direction": "down",
+     "why_he": "ביטחון/איראן/טילים"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "ZmVkZXJhbCByZXNlcnZlIGV4mvlbs0hk",
+   "ts": 1792781435000,
+   "title": "Federal Reserve Expands 18-Month Examination Cycle Eligibility for Banks Under $6 Billion - JD Supra",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOM3psU2dMRmJPcUtwdHdwbWtvVmNBT0tkSG9QTEhhV2pLRlFzZDFOQXNIcEVjbGxNeXpPMHhQdnpnbDVCNjc3SXR6dEpFNWpkQmppNjBZOXFsTFg0ZERWZ2Y0bWJ4TDRqS2NyQWtPQ1IzNUlJVE1WQjUwZ1BOQzVlbw?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "rates",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "JPM",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "XLF",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "LUMI.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "POLI.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "DSCT.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "dHJ1bXAgdG8gZXhlbXB0IHNvmvlbosqw",
+   "ts": 1792781285000,
+   "title": "Trump to exempt some Canadian products from tariffs amid midterm pressure - CBC",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSUJZT2V3YzhISHZBODlod2VSNFRrZkRBUWZEY2lMdjQ2OVBHaVB3VDc0TXBDYTk4T1pqNVZkSnNfdk1fYzM0ZVRtdXZnUHlUc1BkU3NGYzNMWl9VcnB2Q1k2ZnVyWnllYjNBcUpHaFlaTUtSMVM0ZkM1dW1mYU9pWFJBckQtUQ?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
   {
    "id": "dHJ1bXBzIHNwZWNpYWwgZW52mvl7j668",
    "ts": 1792774304000,
@@ -10892,6 +12411,98 @@
   "iran says 7 oil tankers attacked in the strait of hormuz as fears of a return to war grow": 1792704789000,
   "iran claims 7 tankers attacked in strait of hormuz": 1792699500000,
   "לא סביר שהבחירות בישראל ישנו את מדיניותה הנוקשה כלפי איראן ופלסטין": 1792696402000,
-  "iran says 7 tankers damaged in strait of hormuz and other mideast news  unionbulletin": 1792695983000
+  "iran says 7 tankers damaged in strait of hormuz and other mideast news  unionbulletin": 1792695983000,
+  "trump expected to dismiss some 50 tariffs on canada report": 1792786577000,
+  "trump signals possible new iran strike while debating wars end senators warn of rising fuel costs": 1792786414000,
+  "on meidas defense cryptocurrency sanctions and trump quid pro quo": 1792786204000,
+  "embattled susan collins announces exemptions for maine from trump canada tariffs": 1792786140000,
+  "נעילה אדומה בוול סטריט דאו גונס איבד יותר מאחוז מחיר הנפט בעלייה": 1792785900000,
+  "trump to ease 50 canada tariffs on farm equipment packaging goods": 1792785864000,
+  "trump to lowers some canada tariffs to help maine lawmakers reelection bid": 1792785855000,
+  "trump rolls back some canada tariffs as midterm election approaches": 1792785842000,
+  "trump removes 50 tariffs on canadian products to try to boost to maine companies": 1792785842000,
+  "donald trump to cut canadian tariffs after pressure from republicans": 1792785823000,
+  "trump administration cancels some canada tariffs amid close midterm races": 1792785805000,
+  "riyadh missile strike victim buried in bogura": 1792785600000,
+  "trump poised to lift 50 tariffs on some canadian products": 1792785469000,
+  "failed houthi ballistic missile launch kills family in eastern sanaa": 1792785047000,
+  "update us equity indexes fall as rising iran tensions push crude oil higher": 1792784861000,
+  "us ambassador to turkey could there be an iran strike this weekend absolutely": 1792784608000,
+  "איראן טוענת שתי מכליות נפט נפגעו ממוקשים ימיים באזור מצר הורמוז": 1792784346000,
+  "us hints at possible strikes on iran this weekend": 1792784165000,
+  "consumer sentiment nears record low as inflation fears rise": 1792784142000,
+  "federal reserve votes unanimously to raise rates 25 basis points to 375400 warsh defies white house pressure to launch tightening cycle": 1792784100000,
+  "collins touts trump decision to remove some farm products from canada tariffs  portland press herald": 1792783976000,
+  "growth to remain strong despite inflation headwinds": 1792783908000,
+  "ahead of tight race trump exempts some canadian goods from tariffs": 1792783684000,
+  "trump declines tariffs on wind turbines for now": 1792783550000,
+  "trump to cut some canada tariffs in bid to aid maine senator": 1792783224000,
+  "what to expect from wednesdays federal reserve meeting": 1792783121000,
+  "us to drop some tariffs on canadian exports says maine senator": 1792783004000,
+  "how eu ships are still able to carry trumps russian diesel despite so many sanctions": 1792782794000,
+  "us may strike iran this weekend says envoy": 1792782793000,
+  "הנפט זינק מעל 117 דולר החשש מהסלמה מול איראן מחזיר את האינפלציה למרכז": 1792782600000,
+  "yemen death toll from houthi missile strike on military camp rises to 60": 1792782505000,
+  "a time of uncertainty at the federal reserve": 1792782440000,
+  "wsj donald trump expected to lift some tariffs to help susan collins reelection bid": 1792782246000,
+  "washington could strike iran this weekend us envoy says": 1792782233000,
+  "tom brack the possibility of striking iran within days is very high": 1792782080000,
+  "maine senator says she secured tariff exemptions for some canadian goods": 1792782000000,
+  "maine senator says tariff exemptions coming for some canadian goods": 1792781960000,
+  "trump says he doesnt know anything about possible us strike on iran this weekend": 1792781942000,
+  "federal reserve expands 18month examination cycle eligibility for banks under 6 billion": 1792781435000,
+  "trump to exempt some canadian products from tariffs amid midterm pressure": 1792781285000,
+  "us could absolutely strike iran this weekend says envoy": 1792781166000,
+  "gold falls below 4000 as oil surge deepens weekly rout ahead of fed  fxstreet": 1792781159000,
+  "exclusive  trump expected to remove some tariffs on canada in bid to help susan collins": 1792780920000,
+  "trump to lower canada tariffs for certain agricultural goods collins says": 1792780740000,
+  "trump expected to ease some canadian tariffs as republicans face midterm pressure wsj": 1792780471000,
+  "us could strike iran this weekend says envoy": 1792780389000,
+  "us could strike iran this weekend envoy says": 1792780280000,
+  "מאיראן ועד קוריאה הצפונית הכלכלות שנשענות על שוק הקריפטו": 1792780260000,
+  "trump may scrap 50 tariffs on canadian goods to aid gop senator  daily sabah": 1792780140000,
+  "us to remove 50 tariffs on some canadian goods to help republicans in midterms wsj reports": 1792780010000,
+  "רוסיה איראן קוריאה הצפונית ועכשיו ישראל תוכנית הקריפטו של נתניהו": 1792779360000,
+  "update equities mostly lower intraday as oil prices soar": 1792779037000,
+  "update us equity indexes mixed as technology attempts recovery amid surging crude oil": 1792778595000,
+  "saudi arabia the missile factory and the strategic balance with iran": 1792778208000,
+  "beyond the proxy label rethinking the houthiiran relationship  analysis": 1792778033000,
+  "united states could strike iran this weekend tom barrack": 1792777980000,
+  "could there be a strike this weekend absolutely trump envoy warns iran amid us standoff": 1792777464000,
+  "trump said to order centcom to draft iran strike plan": 1792777020000,
+  "barrack warns of possible us strike on iran this weekend": 1792776333000,
+  "crude oil rises to a 22week high on gulf attacks": 1792776248000,
+  "iran has detailed plans to strike undersea cables in the persian gulf if war resumes  media": 1792775344000,
+  "נתניהו ירד מהפסים מציע להתמודד עם סנקציות באמצעות קריפטו כמו איראן  פוליטי  themarker": 1792775040000,
+  "im pissed off its bullst trump voters in michigan not happy about tariffs": 1792774812000,
+  "fed seen holding rates next week before likely december hike pantheon says": 1792773467000,
+  "fed pause may not mean rate hikes are over": 1792773330000,
+  "middle east conflict pushes global oil shipping costs to record highs iea warns": 1792773091000,
+  "us stocks fall as oil rally keeps a lid on treasuries": 1792772580000,
+  "crude oil prices rise as speculation increases about possible us strike on iran post election": 1792770948000,
+  "uk to deploy raf typhoon jets to defend saudi arabia against houthi attacks": 1792770544000,
+  "cheese importer in new jersey assails us tariffs on canadian imports": 1792769931000,
+  "oil spill washes up on uae beaches after tanker strike": 1792769447000,
+  "שר החוץ הגרמני הודיע מוכנים לנהל עם צרפת ובריטניה מומ מול איראן  כדי לשלול רכישת נשק גרעיני": 1792769425000,
+  "global energy security at risk if strait of hormuz does not open in weeks iea chief says": 1792769312000,
+  "tariffs to drop on some canadian goods says us senator": 1792768476000,
+  "ארהב טראמפ בוחן סיום מהיר למלחמה עם איראן": 1792767895000,
+  "us consumer sentiment falls to 5month low as longterm inflation expectations reignite at 35": 1792767300000,
+  "צבא ישראל אין הצדקה לתקוף את איראן לפני הבחירות": 1792766397000,
+  "saudi missile plant expansion may produce more powerful missiles study says": 1792765548000,
+  "oil jumps 7 to above 100 ahead of us blockade on strait of hormuz": 1792758231000,
+  "לא רק ישראל  איראן חושפת את תוכנית הנקמה היא מוכנה להמר על הכל": 1792754803000,
+  "us central command says naval blockade prevented iran oil exports worth at least 25 billion": 1792754546000,
+  "אדישות בהמודיע ערב הבחירות התלהבות בעיתונים החרדים לקראת מלחמה עם איראן": 1792754313000,
+  "oil climbs again as usiran fighting raises fresh hormuz supply fears": 1792750196000,
+  "oil sprints to a 5month high while tech and crypto stumble": 1792749480000,
+  "משמרות המהפכה הכריזו על נכונותם לבצע פיגועי תגמול מעבר לגבול אם איראן תותקף": 1792747565000,
+  "why restoring normal traffic through hormuz wont be easy": 1792745176000,
+  "gold slides and oil climbs as fed hike bets stay alive": 1792742997000,
+  "4 כלי תקשורת חושפים פרטים על תוכניות לתקוף את איראן": 1792734395000,
+  "trump has threatened to escalate his iran war after the us midterm election is tehran prepared for that": 1792733335000,
+  "עוצמתו של טיל ה9dey קו ההגנה האחרון המגן על מאגר הטילים של איראן": 1792727859000,
+  "איראן טוענת כי הפילה רחפן מדגם mq9 פרזיט מה שאילץ ספינות מלחמה אמריקאיות לסגת 700 קמ ממצרי הורמוז": 1792723222000,
+  "world in brief trump to cut more canada tariffs stock markets stumble": 1792713600000
  }
 }
