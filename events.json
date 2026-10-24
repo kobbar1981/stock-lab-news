@@ -1,34 +1,34 @@
 {
- "updated": 1792825306276,
+ "updated": 1792843442765,
  "feeds": [
   {
    "name": "Google News EN: Trump/tariffs",
-   "ok": true,
-   "n": 100
+   "ok": false,
+   "n": 0
   },
   {
    "name": "Google News EN: Fed/rates",
-   "ok": true,
-   "n": 100
+   "ok": false,
+   "n": 0
   },
   {
    "name": "Google News EN: Iran/Israel",
-   "ok": true,
-   "n": 100
+   "ok": false,
+   "n": 0
   },
   {
    "name": "Google News EN: oil",
-   "ok": true,
-   "n": 99
+   "ok": false,
+   "n": 0
   },
   {
    "name": "Google News HE: ביטחון",
-   "ok": true,
-   "n": 83
+   "ok": false,
+   "n": 0
   },
   {
    "name": "Google News HE: כלכלה",
-   "ok": true,
+   "ok": false,
    "n": 0
   },
   {
@@ -49,11 +49,127 @@
   {
    "name": "Yahoo Finance",
    "ok": true,
-   "n": 19
+   "n": 20
   }
  ],
  "ai_enabled": true,
  "events": [
+  {
+   "id": "15PXmdeV15XXlyDXkNeX16jXmvm79itc",
+   "ts": 1792834320000,
+   "title": "דיווח: אחרי הסנקציות הבריטיות - שינוי המדיניות בישראל והתמיכה בארגנטינה",
+   "link": "https://www.globes.co.il/news/article.aspx?did=1001560618#utm_source=RSS",
+   "source": "Globes",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "15nXqdeo15DXnCDXkdeT16jXmvm76tlc",
+   "ts": 1792834194000,
+   "title": "ישראל בדרך לשם? כך המדינות החשוכות בעולם עוקפות סנקציות באמצעות קריפטו",
+   "link": "https://www.ynet.co.il/economy/article/s1stmgchzx",
+   "source": "ynet economy",
+   "theme": "tariffs",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
+  {
+   "id": "cHJlc2lkZW50IGRvbmFsZCB0mvm4wosw",
+   "ts": 1792830362000,
+   "title": "President Donald Trump Just Threw Fed Chair Kevin Warsh Under the Bus, and Things Could Get Ugly for Wall Street",
+   "link": "https://www.fool.com/investing/2026/10/24/donald-trump-just-threw-fed-chair-kevin-warsh-under-bus-things-get-ugly-for-wall-street/?.tsrc=rss",
+   "source": "Yahoo Finance",
+   "theme": "rates",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "",
+   "tickers": [
+    {
+     "symbol": "JPM",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "XLF",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "LUMI.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "POLI.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    },
+    {
+     "symbol": "DSCT.TA",
+     "direction": "down",
+     "why_he": "ריבית/אינפלציה"
+    }
+   ],
+   "confidence": 0.3,
+   "analyzed_by": "rules",
+   "high_confidence": false
+  },
   {
    "id": "aGVyZXMgdGhlIGFpIGNoaXAgmvm1h6tc",
    "ts": 1792824600000,
@@ -11070,138 +11186,6 @@
    "confidence": 0.3,
    "analyzed_by": "rules",
    "high_confidence": false
-  },
-  {
-   "id": "15jXqNeQ157XpCDXotecINeQmvjzpkyo",
-   "ts": 1792700700000,
-   "title": "טראמפ על איראן: \"הכינו בהם חזק, ואולי נמשיך בזה עוד קצת\" - mako",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9EdjNKZkF0d1dFajNPeW5laUFNQjVvYUNNVElxV3pkT1hPd3RhWGQtcFBsM3FKOWloM3hJRWRWaXA3MjJocmdLc0tjb0NJRko5UUp2dXdVVk15Z0dpSmxNZkNjd1pHSkJrYW5MN3NpTGJOdkJpSGtvSkpwci0?oc=5",
-   "source": "Google News HE: ביטחון",
-   "theme": "security-israel",
-   "themes_he": [
-    "ביטחון/איראן/טילים"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "ESLT",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "ESLT.TA",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "LMT",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "NOC",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "ITA",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ביטחון/איראן/טילים"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "dHJ1bXAgc2lkZWxpbmVzIHJ1mvjzoeiw",
-   "ts": 1792700645000,
-   "title": "Trump sidelines Russia sanctions as GOP allies push for more pressure on Putin - Fox News",
-   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBQLXMwMk9vbjh2eXJreDhzMENqMHZnTDd3Tk51NEs0emVQd2lZT3hqZlZ1OURoNjZidWJJdU9KTWl4eEdNQ29wcXR5M2NNVHRNSXAtM1ln?oc=5",
-   "source": "Google News EN: Trump/tariffs",
-   "theme": "tariffs",
-   "themes_he": [
-    "מכסים/סחר"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "NVDA",
-     "direction": "down",
-     "why_he": "מכסים/סחר"
-    },
-    {
-     "symbol": "AAPL",
-     "direction": "down",
-     "why_he": "מכסים/סחר"
-    },
-    {
-     "symbol": "TSLA",
-     "direction": "down",
-     "why_he": "מכסים/סחר"
-    },
-    {
-     "symbol": "AMD",
-     "direction": "down",
-     "why_he": "מכסים/סחר"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "b2lsIHNvYXJzIGFib3ZlIDExmvjzm71s",
-   "ts": 1792700542000,
-   "title": "Oil soars above $113, Nasdaq plummets in worst day since June on Iran strike news, AI spending concerns - New York Post",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbkpEdHl6Z0tyUTJvUmt0aHc1b2s4Y0VSTU43akFRMllIRU1za2FoUzJfcjhiS0d1b1lrOEJ3WDZwU0FHeEgxS2hvaEZKUmVVUXYtTmlZYm1RZlhBTWU4WWV6ZWFaNEpRTG01RHVWNGRoOXJxZXlmR3RxMm1weVlrenVTcFZQTXA4eW9PN2dfeHZScFNtOFp0Zy02cWRIYW9ZTWt6azJHb0dFWWw0OGlCWW5MLXJqZEF1a2c?oc=5",
-   "source": "Google News EN: Iran/Israel",
-   "theme": "security-israel,oil",
-   "themes_he": [
-    "ביטחון/איראן/טילים",
-    "נפט/אנרגיה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "ESLT",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "ESLT.TA",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "LMT",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "NOC",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "ITA",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ביטחון/איראן/טילים"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
   }
  ],
  "seen": {
@@ -12646,6 +12630,9 @@
   "gold prices under pressure from energydriven inflation  ing": 1792768904000,
   "oil why are hormuz risks and freight costs lifting prices  rabobank": 1792754873000,
   "us and israel are planning for a possible attack on iran after the midterms": 1792751808000,
-  "denmark picks covenants anthem missile in first longrange strike purchase": 1792741140000
+  "denmark picks covenants anthem missile in first longrange strike purchase": 1792741140000,
+  "דיווח אחרי הסנקציות הבריטיות": 1792834320000,
+  "ישראל בדרך לשם כך המדינות החשוכות בעולם עוקפות סנקציות באמצעות קריפטו": 1792834194000,
+  "president donald trump just threw fed chair kevin warsh under the bus and things could get ugly for wall street": 1792830362000
  }
 }
