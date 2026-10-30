@@ -33,6 +33,11 @@
    "date": "2026-10-28",
    "equityUSD": 3235.42,
    "equityILS": 10000
+  },
+  {
+   "date": "2026-10-29",
+   "equityUSD": 3235.42,
+   "equityILS": 10000
   }
  ],
  "log": [],
@@ -51,8 +56,8 @@
   "doNothingILS": 10000,
   "taxNote": "Not deducted. At 25% on gains, after-tax P&L would be 0 ILS."
  },
- "updatedAt": "2026-10-29T01:20:43.181Z",
- "dataAsOf": "2026-10-28",
+ "updatedAt": "2026-10-30T01:28:06.464Z",
+ "dataAsOf": "2026-10-29",
  "assumptions": {
   "entry": "next trading day open after the alert, plus slippage",
   "slippagePerSidePct": "by liquidity: 0.1 to 0.6",
@@ -71,5 +76,5 @@
    "intraday path (same-day target and stop = stop)"
   ]
  },
- "summary": "Virtual portfolio (not real money), data as of 2026-10-28: capital 10000 ILS vs 10000 ILS at start (+0 ILS, 0%). Doing nothing would still be 10000 ILS. No alert has passed the strict gate yet, so nothing was bought. That is the intended behavior: the system stays in cash until a signal type proves positive expectancy after costs. Small samples prove nothing; fees and slippage are included, tax is not."
+ "summary": "Virtual portfolio (not real money), data as of 2026-10-29: capital 10000 ILS vs 10000 ILS at start (+0 ILS, 0%). Doing nothing would still be 10000 ILS. No alert has passed the strict gate yet, so nothing was bought. That is the intended behavior: the system stays in cash until a signal type proves positive expectancy after costs. Small samples prove nothing; fees and slippage are included, tax is not."
 }
