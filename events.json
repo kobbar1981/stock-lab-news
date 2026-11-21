@@ -1,10 +1,10 @@
 {
- "updated": 1795222276231,
+ "updated": 1795248035920,
  "feeds": [
   {
    "name": "Google News EN: Trump/tariffs",
    "ok": true,
-   "n": 40
+   "n": 53
   },
   {
    "name": "Google News EN: Fed/rates",
@@ -19,7 +19,7 @@
   {
    "name": "Google News EN: oil",
    "ok": true,
-   "n": 65
+   "n": 57
   },
   {
    "name": "Google News HE: ביטחון",
@@ -49,11 +49,625 @@
   {
    "name": "Yahoo Finance",
    "ok": true,
-   "n": 14
+   "n": 18
   }
  ],
  "ai_enabled": true,
  "events": [
+  {
+   "id": "aW5mbGF0aW9uIGNsaW1icyB0mwq3jovs",
+   "ts": 1795246723000,
+   "title": "Inflation Climbs to 4%, Fed Eyes Rate Hike - Wisevoter",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUm9PbVpUdUhsMVZ4ME1SX1haajdPY3Z1QUl5Y0ZyVXhwMlI1ejVZQ1JjcU0xZ2p6aWx3VkF2Qk5yTGdNbGFHMThBUjV4dFl5RDVoX2RlQ3hPd0R2Y2JkSVRCYWJnNkdhcHMxY2VsVXZ1dWctZ3F3MnN2c29vZTNQdDdCUXJpNE9JZFc4aDBxYzdzSjA?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "inflation and interest rates",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "האינפלציה בארה\"ב עולה ל-4% והפד שוקל העלאת ריבית.",
+   "tickers": [
+    {
+     "symbol": "^GSPC",
+     "direction": "down",
+     "why_he": "אינфלאציה עולה מגבירה חששות להעלאת ריבית על ידי הפד."
+    }
+   ],
+   "confidence": 0.88,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "c2F1ZGlsZWQgY29hbGl0aW9umwq2quaw",
+   "ts": 1795245377000,
+   "title": "Saudi-led coalition says intercepted three Houthi missiles targeting Riyadh - The New Region",
+   "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9QaHA2T3JFckNzbF9KdGZPdnpLYU5RcWdGNm9OZDZqazF1dWdVaThCTmpRS1c0RzFsZW85eFNLNkg0eE5CajRySXdKUQ?oc=5",
+   "source": "Google News EN: Iran/Israel",
+   "theme": "oil and security",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "הקואליציה בהנהגת סעודיה ירטה טילים חות'ים שכוונו לריאד.",
+   "tickers": [
+    {
+     "symbol": "XOM",
+     "direction": "up",
+     "why_he": "סיכונים ביטחוניים במפרץ תומכים במחירי הנפט."
+    }
+   ],
+   "confidence": 0.86,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "dGhhaWxhbmQgdG8gc2NyYXAgmwq2nywo",
+   "ts": 1795245243000,
+   "title": "Thailand to scrap tariffs on US goods, says Trump - Social News XYZ",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNjdrVXJJUldxX0l3TXJzNWlJVHpaWmN1dnExUWNGNk13UVZSSWpmRllhWUp3YjBraDFPZXA3eUJqRjl5SnhGczNna3FoRHBULXdYMnl1U0FwTWxNT2RfV20wR1RXSURlUTk1SnRNdzBxdGJHbmNRd0hWY2ZFTlR1OGRNSDk0T1JBVllQVHdKUGfSAZABQVVfeXFMTTY3a1VySVJXcV9Jd01yczVpSVR6WlpjdXZxMVFjRjZNd1FWUklqZkZZYVlKd2Iwa2gxT2VwN3lCakY5eUp4RnMzZ2txaERwVC13WDJ5dVNBcE1sTU9kX1dtMEdUV0lEZVE5NUp0TXcwcXRiR25jUXdIVmNmRU5UdThkTUg5NE9SQVZZUFR3SlBn?oc=5",
+   "source": "Google News EN: Trump/tariffs",
+   "theme": "trade policy",
+   "themes_he": [
+    "מכסים/סחר"
+   ],
+   "summary_he": "תאילנד צפויה לבטל מכסים על מוצרים אמריקאים לדברי טראמפ.",
+   "tickers": [
+    {
+     "symbol": "NVDA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AAPL",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "TSLA",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    },
+    {
+     "symbol": "AMD",
+     "direction": "down",
+     "why_he": "מכסים/סחר"
+    }
+   ],
+   "confidence": 0.7,
+   "analyzed_by": "ai+rules",
+   "high_confidence": false
+  },
+  {
+   "id": "15DXqNeU15Eg15TXm9eo15nXmwq2ll9c",
+   "ts": 1795245132000,
+   "title": "ארה\"ב הכריזה על הצעות המשא ומתן של איראן כ\"בלתי מקובלות\". - Vietnam.vn",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPczVsVGFUTHA0RDROcnl6TFZMTnhZaDJXd0NTX2tWcTVkVU5qbFZUbWpnbVd4dDRJdjN2OWpyaVV5UXRXZnV0VThGdy02LVU2X0p0LTRWcVFDOFBtUHRkRUVWdlJnaHYtS3NCSGdVWUtpQlFUdU5tTmhpOHQ4d2p1ZXJYUENxcDVkVURKanM1Z2ZkcTJP?oc=5",
+   "source": "Google News HE: ביטחון",
+   "theme": "iran sanctions",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "ארה\"ב דחתה את הצעות המשא ומתן של איראן.",
+   "tickers": [
+    {
+     "symbol": "XOM",
+     "direction": "up",
+     "why_he": "מתיחות גיאופוליטית מול איראן משפיעה על שוק האנרגיה."
+    }
+   ],
+   "confidence": 0.85,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "YnJlbnQgY3J1ZGUgcHJpY2Ugmwq1u3ag",
+   "ts": 1795243849000,
+   "title": "Brent Crude Price $92.57: 8 Days to OPEC+ 2027 Quota Call - FinanceFeeds",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTDNUTlUtbktzVFlKMUpmQnZUcTBkSTJYbDhZZmQ2TXlheWkyeE5INHFtNUlSQlZGdGNzdVFzeFNnYmdSMmZZakhiMUNYTmVicTlBNWs2MVFMM1VoVWFLQTZZc1E1YWVXZTQzbC1wWGxhd0I3dkhFcTJEUnUwenVPNW1xTFdCTEVWMHZ0Tll6czAxbDhNdUpuSE5UZE5pajdERmxHdFZ1c3lsRVBxeE5CdQ?oc=5",
+   "source": "Google News EN: oil",
+   "theme": "oil prices",
+   "themes_he": [
+    "נפט/אנרגיה"
+   ],
+   "summary_he": "מחיר נפט ברנט עומד על 92.57 דולר לקראת כינוס אופק.",
+   "tickers": [
+    {
+     "symbol": "XOM",
+     "direction": "up",
+     "why_he": "מחירי הנפט ומדיניות אופק משפיעים ישירות על מניות האנרגיה."
+    }
+   ],
+   "confidence": 0.9,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "15HXkNeZ16jXkNefINee15DXmwq13a0g",
+   "ts": 1795242598000,
+   "title": "באיראן מאותתים: \"לא נסכים להוצאת האורניום המועשר\" - גלובס",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE84Tm9wNDhDUUZ6bk5KX3ltdlU3bC1uWGV5T0l1cWl2MXRLeG9GcUVsWHFBTDJfMnRIMVVET25FcllXMzl2MklLb0Y2UW5RNU1rOVNpWm1DQ1Q2ZkVVOTZUel80dWF5MFdj?oc=5",
+   "source": "Google News HE: ביטחון",
+   "theme": "nuclear negotiations",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "איראן מאותתת כי לא תסכים להוצאת אורניום מועשר.",
+   "tickers": [
+    {
+     "symbol": "XOM",
+     "direction": "up",
+     "why_he": "קיפאון בשיחות הגרעין האיראניות תומך בסיכויי הסלמה ומחירי נפט."
+    }
+   ],
+   "confidence": 0.87,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "b2lsIHByaWNlcyBjbGltYiBvmwq0bpq8",
+   "ts": 1795241312000,
+   "title": "Oil Prices Climb on Houthi and Hormuz Risks - Wisevoter",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVndINmktUTFWNU5oQnhqY2oxVlExdTYzV2VTeHVVZHB4VHJkd3pxcGRnM0tqNWZRRnlrc3BIX1NyMFp1eURzcE9EY0sySWV2bmZLVlhneHZ5QUM5S2lkeGhCcWZGdGVHRTZKbWZZa2VjOUo1dVZvdlBaUUgyUDJmaThZclpKQmpuOHUxYw?oc=5",
+   "source": "Google News EN: Iran/Israel",
+   "theme": "oil prices",
+   "themes_he": [
+    "ביטחון/איראן/טילים",
+    "נפט/אנרגיה"
+   ],
+   "summary_he": "מחירי הנפט עולים בעקבות סיכונים מצד החות'ים ובמצר הורמוז.",
+   "tickers": [
+    {
+     "symbol": "XOM",
+     "direction": "up",
+     "why_he": "סיכונים במצר הורמוז ומתקפות חות'יות דוחפים את מחירי הנפט כלפי מעלה."
+    }
+   ],
+   "confidence": 0.9,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "15DXmdeo15DXnyDXoNei16jXmwpzxdiw",
+   "ts": 1795240643000,
+   "title": "איראן נערכת לנסות לשבור את המצור האמריקני: \"שיירת מכליות תצא מהמפרץ\" - וואלה",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA2Zk9lUkFnVjIxVDVmek05Z204MDJ1ZDhmXzkzVEE1azdjdklQZHdXOFJnVUU1aVJseE1TV09WNWZwcGxjT1ZiZGlnSzc0Nm05MmJVclp4aw?oc=5",
+   "source": "Google News HE: ביטחון",
+   "theme": "oil supply risk",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "איראן נערכת לנסות לשבור את המצור הימי האמריקני עם שיירת מכליות.",
+   "tickers": [
+    {
+     "symbol": "XOM",
+     "direction": "up",
+     "why_he": "איומים על נתיבי ספנות הנפט במפרץ מעלים חשש לשיבושי אספקה."
+    }
+   ],
+   "confidence": 0.86,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "dGhlIHNhdWRpbGVkIGNvYWxpmwpzobwo",
+   "ts": 1795240221000,
+   "title": "The Saudi-led coalition fighting Yemen's Iran-aligned Houthis said on Saturday it had intercepted and destroyed three ballistic missiles fired towards Riyadh, marking the second Houthi attack on the Saudi capital in a few days, after its tallest skyscraper was str - Facebook",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcmtqRC1zWkhPVUpyQTdzcXhyMDhxX3JHd2ExMHE3VzRXeFlaYmRTTnQzLWVNcFhhbktVT2d2ZGtDNUlhTVBXMUdBU0l1c3FXbDVSVXdPWjMwQkd4OF82OVltbWU5aWoxd3pEcU9RMWNwU0VVd19yUDFxZ3BiRE10WHBKemhNU2JSUncyQldBZW1oMmE1ZW11TGNtRk9MRFVVQVFmbmNZWVpOQl80Mm5kN2dKUEF4VnZEbFItS0luc1Q5cWVYSDZVQUxPX0hNNnotb3JWRg?oc=5",
+   "source": "Google News EN: Iran/Israel",
+   "theme": "oil security",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "ירוט שלושה טילים בלסטיים שכוונו לעבר ריאד.",
+   "tickers": [
+    {
+     "symbol": "XOM",
+     "direction": "up",
+     "why_he": "התקפות על תשתיות אנרגיה בסעודיה תומכות במחירי הנפט."
+    }
+   ],
+   "confidence": 0.88,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "c2F1ZGkgY29hbGl0aW9uIGlumwpz1tq0",
+   "ts": 1795239171000,
+   "title": "Saudi coalition intercepts three Houthi missiles over Riyadh as attacks target Saudi financial, military and oil assets - Organiser",
+   "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNemVOZ1Nua243cXB0SnJCbHI2ZWhpSk5xU0N5LU5ibXhRWTJuZG5vbUdGLUNMa1dwUEFOYjBWSXE2dElibUpnU1NNZVRuUW1KNE1LMlMwYlE4MDhKV1hIZlpnbGt4aU44VWJ5TS1qNHZicnhmYUdTZ2JwZTRxekdqLTZTMzZpakhUa1BadWJsUGpLUXRIZENLMnFXUGZ2cGo5TFFPWlZUTUYwdWNncW9LMm1vNTh4d2RlRjZqMWxXb09wMlptTl8xdXhZbXJUalJGUzRRYkkzSmZWdHhtZnlvVFdST3BHR3JWM2RwWHFaekJSLWdFeGpvc0dCQXlZZmY1dFZJ0gGIAkFVX3lxTFBQUE1TOGgteTFhdWcxNHBGcjFmZVJod2FOMHdjaGNjRmgxYzZzSFhIdllUWmIxbW5LaEZpY1MwNzlJbl93dFRTOF9RT3k1TXJZWkpWNVY2ZC1xbV9nTXVGYkxFdWdVdTFabGozNFlaeHRhWjdXenFBZVk0QlJkYTBxcGZaNmpHLTZZZ3ZiQ2xqRnBkZmt4SnljaEw3SFhhZzVfMHN4UDVRcHcwd2puMWtLaWtlbFQwaEZocDFNWWZrVWxFZWs5MW51Z1RlTmFYQVRqLVkybDFpS0I3RUJuRWlxeDFBeUtubzg4S2VfY0x5RUZhc3FrVUFZNmhYTzRQa0ZteGsxWC02WA?oc=5",
+   "source": "Google News EN: Iran/Israel",
+   "theme": "oil security",
+   "themes_he": [
+    "ביטחון/איראן/טילים",
+    "נפט/אנרגיה"
+   ],
+   "summary_he": "הקואליציה הסעודית ירטה טילים מעל ריאד סמוך לנכסי אנרגיה.",
+   "tickers": [
+    {
+     "symbol": "XOM",
+     "direction": "up",
+     "why_he": "פגיעה בתשתיות פיננסיות וצבאיות בסעודיה מעלה פרמיות סיכון אנרגיה."
+    }
+   ],
+   "confidence": 0.87,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "b2lsIHByaWNlcyBzZXQgZm9ymwpyi3ug",
+   "ts": 1795238251000,
+   "title": "Oil prices set for third straight weekly decline on strong Mideast export flows - The Business Standard",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOV3JHbi1wRmYzNmhmZTcxbW5CMXdyVDRYeU5nems4c3VQcDJBa0xmeUl6Q1YzQjZtVnBaYXA1dl9JVlFhVy12QU8tQlI3ay1USXY2eUQwMW0tNWNneElsVjUxdGcwajhoOGpRYThCWGp0QmhqTm94Y2ozaGxDTjZaVnZpS1BoQVZLejEtNkJqc0NVRXhERC1uQ09CSmRiVk1rN3h2bzhuRVBJTUw4VklsWVJlcHpuQXox?oc=5",
+   "source": "Google News EN: oil",
+   "theme": "oil prices",
+   "themes_he": [
+    "נפט/אנרגיה"
+   ],
+   "summary_he": "מחירי הנפט בדרך לירידה שבועית שלישית ברציפות עקב ייצוא חזק.",
+   "tickers": [
+    {
+     "symbol": "XOM",
+     "direction": "down",
+     "why_he": "יצוא חזק מהמזרח התיכון לוחץ את מחירי הנפט כלפי מטה."
+    }
+   ],
+   "confidence": 0.88,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "dHJ1bXAgcHJhaXNlcyBpbmRpmwpy2s5c",
+   "ts": 1795237536000,
+   "title": "Trump Praises India's 7% GDP Growth, Slams US Federal Reserve Over High Interest Rates - Howl.Link",
+   "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE5lWXBzVlNXemI4UGN5VTh0T2duQmkxQkZ4dk1DSmtnelNaQjlTcGN2NmFTSlpNWEJfaXdv?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "monetary policy",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "טראמפ מבקר את הפד בשל ריבית גבוהה ומשבח את צמיחת הודו.",
+   "tickers": [
+    {
+     "symbol": "^GSPC",
+     "direction": "down",
+     "why_he": "לחץ פוליטי על הבנק המרכזי מעלה אי-ודאות סביב מדיניות הריבית."
+    }
+   ],
+   "confidence": 0.86,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "c2F1ZGlsZWQgY29hbGl0aW9umwpxyd74",
+   "ts": 1795237330000,
+   "title": "Saudi-led coalition intercepts three Houthi missiles targeting Riyadh - The Business Standard",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOY2xUUVZaS3dqT192VlRrMF82d0hheC1VaVlpQ2hEY0VGUnRZeG01LThLOWpVeFU2ZHQtZUMwYTJrLW1TM19TTUdaVDVWWGplRXk1QTNHdVl3Y2xaaE5MdTJIMWR5T3Q2RHhUamxEcmdFTU9wbUxvQm41S2FrZzhKVENJT20tOWtrWHhQbzVOa1hrZlc5bVNHWWNVTUIwUnFLT182cmYxblRmOGdtYTUxOWJuNktOY1lNaElkTU9nVQ?oc=5",
+   "source": "Google News EN: Iran/Israel",
+   "theme": "oil security",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "הקואליציה בהנהגת סעודיה ירטה טילים שכוונו לריאד.",
+   "tickers": [
+    {
+     "symbol": "XOM",
+     "direction": "up",
+     "why_he": "סיכוני אספקת נפט במפרץ תומכים במחירים."
+    }
+   ],
+   "confidence": 0.86,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "c2F1ZGlsZWQgY29hbGl0aW9umwpx6480",
+   "ts": 1795236012000,
+   "title": "Saudi-led coalition intercepts three Houthi missiles headed for Riyadh - Al Jazeera",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZ3ZhbEhHbVN4RWdTZWVLWGlFQnl1UlkySGFjTEd3NEJHaHBDeXZuclpCc1ZLNy1Fa0oxSlVJQlRLVmhCV1hkdFpPUVZ6Y2JXcDlhMDExaGpIOHM1RUhHVmlOMmV2SXVydFU3UWtvdVUxalkxUHRNdXg2Q2JZVG1WN3otT1lKaU4yVGwyUUJVVnJ4QkREb0tnVGZCdG5TQTFyUk1SSWZHMEhrclVTeVlUenVR0gG3AUFVX3lxTFBVWGExdVo0WFJQdkYxTTRNRVpBaFdBSzdObGNjOWZQVDJtTVZyNW9yQUEwbGtHU092TW1BY0FSY3dBc25wZVp2QjFIZnRLOE9RMFhLMWpjY0R1TVhUUWhubENJaE44Z1JMdDBXQWJqMDlGNVhzT2pHWEpONXhZUFcwWWE0bUtRb2xZV1VkUXZVS00xVmcwa0x1eWx5dHpES2FwcUQwV043NExycnNQb0ltbWw2QlF6OA?oc=5",
+   "source": "Google News EN: Iran/Israel",
+   "theme": "oil security",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "הקואליציה הסעודית ירטה טילים שהיו לעבר ריאד.",
+   "tickers": [
+    {
+     "symbol": "XOM",
+     "direction": "up",
+     "why_he": "איומים ביטחוניים בסעודיה משפיעים על שוק האנרגיה."
+    }
+   ],
+   "confidence": 0.86,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "15TXodec157XlCDXkdei15nXmwpwor80",
+   "ts": 1795235202000,
+   "title": "הסלמה בעימות בין הקואליציה לקבוצת אנסאר אללה: טילים מכוונים לריאד ותקיפות אינטנסיביות בתימן - جريدة القدس",
+   "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1xcUsxa0NFX0dEVktWYlR4dHdaVXhOVlFtcFBMMGxPZTZfaTdLZUVEWG1yQWFkcmY2VWxtWVVfRTBJSl9LbVIxUF93?oc=5",
+   "source": "Google News HE: ביטחון",
+   "theme": "oil security",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "הסלמה בעימות בין הקואליציה לחות'ים עם טילים לעבר ריאד.",
+   "tickers": [
+    {
+     "symbol": "XOM",
+     "direction": "up",
+     "why_he": "הסלמה צבאית בתימן ובסעודיה מעלה את פרמיית הסיכון לנפט."
+    }
+   ],
+   "confidence": 0.87,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "dHJ1bXAgaGFpbHMgaW5kaWFzmwpw8t5c",
+   "ts": 1795234458000,
+   "title": "Trump hails India's 7% GDP growth, low interest rates as he lambasts US Fed Reserve - Firstpost",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOb1FTc1k1NEJMOGRVdUZsaHB6b1ZqSF9sclM3Z2VZaHlpR1NUV3k1VFAwUmw4LU1sbVJ5NHg3UnZTTnpGLVJlLXlVcmdxR1JzWGN1WXAxN3gtbGR1OXI1UVliSlpkaGJtTTVDQm9vZXJXdllTR0hQMnFNMnRIbnFhcjJoNjd0SGVMUlRqMU01TEIzUTFROXlNMnVDUTNZMGJwVE9SenVPdWtwVURFdmcydDJrdV9oOXliQUdBaTl2d2FaOGF2ajR3ZmJYNlhlUFFheGVn0gHYAUFVX3lxTFBzZWpsMm9MQVR0RW9oOVNVSXNKS2FxbWp4eldCdGlJTmxyR2k0QlVJaTFVeGs4TE1SME41dHdJWkZQNXdZX0M3UHJ4Y19yYlRsV3AtRi00T25pVWJFb0JiZmFWR0hITTNyQWJkMVJnbjhJQXFRV1VPcmFBUm5DQUhBWnYwU21sYkhWeHhiV0dfOFZ1cENkREowN0VWWmFDLXRMNTBfNnUtaWs0c2tDblFaV1pOVzlhVmphR1F1cjRrY2UtRm5OOUZTcTk5QXhNSVpuVUE3SjhQbg?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "monetary policy",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "טראמפ מבקר את הפד ומצטט את הצמיחה בהודו.",
+   "tickers": [
+    {
+     "symbol": "^GSPC",
+     "direction": "down",
+     "why_he": "ביקורת על הפד עשויה להשפיע על אמון השוק במדיניות הריבית."
+    }
+   ],
+   "confidence": 0.86,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "dHJ1bXAgY2l0ZXMgaW5kaWFzmwpw2yi0",
+   "ts": 1795234185000,
+   "title": "Trump cites India’s 7 pc growth to argue US could hit 15-20 pc with lower interest rates - The Federal",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQ01zdlZaMVktX082Ukl0cFJpYVJsMFBJUEJGY3psUnlVMFh6RXN0XzJJbFFIMHZlWWhiRk9QZHFZSkJHU3ZRdVZsbFg3RXdCc1hLV0pyTkg3UC16ZUU1MUJDMDhVYU1WQnZMZGMyYzMtaE95OWx1OTV6MUhucHRsZFFoZzZCNUprRHZjTk1BTHlKN1lzNDRMWFVVMVh5ZXY3RjRYUlpjV01FVE9iTXpvblZqV2tTUHNCVi04Z3lwVE5JYThXTkYw?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "monetary policy",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "טראמפ משתמש בצמיחת הודו כדי לטעון שהריבית בארה\"ב צריכה להיות נמוכה יותר.",
+   "tickers": [
+    {
+     "symbol": "^GSPC",
+     "direction": "down",
+     "why_he": "התקפות על עצמאות הפד מכניסות תנודתיות לשווקים."
+    }
+   ],
+   "confidence": 0.85,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "b2lsIHByaWNlcyBzbmFwIGJhmwpw2w6o",
+   "ts": 1795234182000,
+   "title": "Oil Prices Snap Back as Tanker Fire Near Hormuz Revives War Fears, but Brent Still Posts Third Weekly Loss - International Business Times Australia",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWDRIellFVG1XRXVGdUFETTBRb2I2LTR3ajdaNWZEY0JnY2h2RVJwWEc5RkJreW9ORjBldkU3QlAwTUxSMkg5UHEwZU9IdXczVXNEZTBFdnR2aEQ5amVRQklDYWRkWlZBVFlQUHdKUzJOLUg0cF9LTHZwekZBV2ZyLUlObHVET3plTXBr?oc=5",
+   "source": "Google News EN: oil",
+   "theme": "oil prices",
+   "themes_he": [
+    "נפט/אנרגיה"
+   ],
+   "summary_he": "מחירי הנפט מתאוששים לאחר תקרית במצר הורמוז.",
+   "tickers": [
+    {
+     "symbol": "XOM",
+     "direction": "up",
+     "why_he": "שריפת מכלית סמוך למצר הורמוז מחדשת את חששות המלחמה ומקפיצה את המחירים."
+    }
+   ],
+   "confidence": 0.91,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "cG9pbnQgdGFyaWZmcyBhcmVumwpvqf40",
+   "ts": 1795233600000,
+   "title": "Point: Tariffs aren’t driving inflation — the Fed’s numbers say so - chronicleonline.com",
+   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxORDljbmx6bWJ1dzYzc25aOUdfNnpOU3FPVExaMUw4Q20tWUItSDRxeS1xOG40UnQ3cVpibTFtOUNQMk52SGNBakd4SEhpUnBtRFBxUmx2a01yNmVGQVNRNnY0NlNYNmhUaW1ySDFhSXZnYlRaOGl3SHMydnd4N05IcXlEbERmZlg5OVBBaU4waFJvLVlpYmhIRlVqR3ZhbGtFQTNuNm5qUE1TeUJuQ3N6Tkc3SG1uWW03QU1RTEtZM2FMWXBUdmZPQUtsOTREbV9lVXFyWXZCUHhiN2ZCVmFxZ21uU1hjNEdlN3RkMmx4YVJOdmJmLVNJ?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "inflation",
+   "themes_he": [
+    "מכסים/סחר",
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "דיון כלכלי סביב השפעת מכסים על נתוני האינפלציה של הפד.",
+   "tickers": [
+    {
+     "symbol": "^GSPC",
+     "direction": "down",
+     "why_he": "דיבייט על אינפלציה ומדיניות פד משפיע על כיוון המניות."
+    }
+   ],
+   "confidence": 0.85,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "bG9vayBhdCBpbmRpYSB0cnVtmwpvo63c",
+   "ts": 1795233495000,
+   "title": "‘Look at India’: Trump targets Fed over high interest rates, claims US could grow 20 percent - Connected to India",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSDkzdmUxbmJZdWxiOEM4b3duWDNSek9jTDRFYzBobVY1MUdwVzJrVldxcmh1OXAwTlJmUzFfbElRbzl4X3JOUU5FNHBWLS1lSjU5cFlyZ2ZYVmFoQW8zcDFQd3lxV205a3QxdXRPRWRPSWczQnJNcEI2WFo0WlN2ZU1uUjk2TUNSVDVSaTFpbHZsb2oxUEZzU3VLemRYTkg0Z2E3UEtvc3kxYzdxMFlEdjB1dlppQWtaUVJEeWdHYw?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "monetary policy",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "טראמפ מבקר את מדיניות הריבית הגבוהה של הפד.",
+   "tickers": [
+    {
+     "symbol": "^GSPC",
+     "direction": "down",
+     "why_he": "לחץ על הפד מצד פוליטיקאים יוצר חוסר ודאות בשווקים."
+    }
+   ],
+   "confidence": 0.86,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "dXMgcHJlc2lkZW50IHByYWlzmwpv9grs",
+   "ts": 1795232809000,
+   "title": "US President praises India’s economic growth & low interest rates - News On AIR",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORmFLSkZkaUdadk5zT0t0NkhqSDZPTXM3a1Q4UGpCb1RrLTlIZEdCVEVXcXNkVWxLeHRuYm9FS2NNb1JUSzNXcGJjMERkRUVHZzQwXy1BanUySUd5VTBxZFF3YWsyUGt3WDByT1RYYTBLTm9vVVVjM1FwQm5jOXNhSU1NaTBYQVE3ZkpmLXJGY25wUQ?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "monetary policy",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "נשיא ארה\"ב משבח את הכלכלה ההודית ומותח ביקורת על הפד.",
+   "tickers": [
+    {
+     "symbol": "^GSPC",
+     "direction": "down",
+     "why_he": "התבטאויות נשיאותיות נגד הפד פוגעות ביציבות השווקים."
+    }
+   ],
+   "confidence": 0.85,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "d2FsbCBzdHJlZXQgZmFjZXMgmwpuc9k0",
+   "ts": 1795231260000,
+   "title": "Wall Street faces inflation test after AI selloff as strategists warn on rebounds - Superpower Daily",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYVA0Y0hjY2FrRE11dFlLYV9LMTR2YlNHRkJQMWRYS0tzV2w3RnJoT2xYN1V3X1dSVzhfcl9LZldFbUxpelJpX3Q0VGdPTy1vT1NmVEN0Ql8zR0MyU21FNWhvcE0zaEFadXpzVGllU3BpZXlwQ2xvSXFFTjdqZjJkb2pVQmV5amdfMWxPNEpGYTNaZkxvLWVlU0M5UmFJd2VadFZpVUt1Y0N0cjJEQ09RMXMzYzl6dw?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "market trends",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "וול סטריט מתמודדת עם מבחן אינפלציה לאחר גל מימושים במניות בינה מלאכותית.",
+   "tickers": [
+    {
+     "symbol": "^GSPC",
+     "direction": "down",
+     "why_he": "חששות מאינפלציה ומכירת מניות טכנולוגיה (AI) מאתגרים את וול סטריט."
+    }
+   ],
+   "confidence": 0.89,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "bG9vayBhdCBpbmRpYSB0cnVtmwpu5d3k",
+   "ts": 1795230938000,
+   "title": "‘Look at India’: Trump cites 7% GDP growth to slam US Federal Reserve - The Week",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWldqd084ZWNTa1hzQ0dYdjFyUjM2MUNDT295a21QU2hoU1p0RDF5WXNXVGJlbktjdEkzVGdOWmZ1THZIZ1Q4UElLTHlnVFNobFlmWWNrY2NuN0wzUGN6UkJLYW01Mkh1WHBWM21XaHRBS3MzQkZEQzg5d2lQUVdUV2dlVXpwNFhRb3pjQlh3aV9sNzY3OFVBNmI3WXg5WnJuN2fSAacBQVVfeXFMTTdaV25zTW1BTU1HeFVIcVdxN3lfU3B3UEFZSmJqN0gwVlNHMndKelVFcDBPemJuemRYNGVaU1lnd0QyTGNRNy05WS1FbmpTeVVmTGRma2c5QmE4UFVyeDk1Sl8wZUdKVEtJWjdYcVlSS29zaExhVWlFQ0pJbGdQcldFaS1TakhBbjJSbzJPRjhOeGdOYkNZTC0wcmlrdnBxTjlQYUxNTVk?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "monetary policy",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "טראמפ תוקף את הפד בהשוואה לצמיחה הכלכלית בהודו.",
+   "tickers": [
+    {
+     "symbol": "^GSPC",
+     "direction": "down",
+     "why_he": "ביקורת על ריביות הפד מייצרת לחץ על המדדים המובילים."
+    }
+   ],
+   "confidence": 0.86,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "15DXqNeU15Eg15TXmNeZ15zXmwpu0mko",
+   "ts": 1795230717000,
+   "title": "ארה\"ב הטילה סנקציות חדשות על סוחרי נפט איראניים. - Vietnam.vn",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5ZbVZra2d1U0pmNkxVLVVXZHNqa3FTSTQ5RW42RjhpVnV5Wnk2YlA3Ql9saWxIQ05FMUc0UGJtMGhubUVLTG9ldWkycC1tUWpGTTdoa01LcUFHdnR3WkhnSnJJMFB2UkotZlAwVzktclE3ei1IanRpOXY0cko?oc=5",
+   "source": "Google News HE: ביטחון",
+   "theme": "iran sanctions",
+   "themes_he": [
+    "ביטחון/איראן/טילים",
+    "נפט/אנרגיה",
+    "מכסים/סחר"
+   ],
+   "summary_he": "ארה\"ב הטילה סנקציות חדשות על סוחרי נפט איראניים.",
+   "tickers": [
+    {
+     "symbol": "XOM",
+     "direction": "up",
+     "why_he": "סנקציות על סוחרי נפט איראניים מצמצמות את היצע הנפט הגלובלי."
+    }
+   ],
+   "confidence": 0.89,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "15DXmdeo15DXnyDXnteq15vXmwpu0ips",
+   "ts": 1795230712000,
+   "title": "איראן מתכוננת לשבור את המצור של חיל הים האמריקאי. - Vietnam.vn",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBvZUdjRGRMbEpQYU05NkwxaVh3eXZqRmZ6Z2p6Ni1pUXBlQ0VWTC03XzduSk41UFJ3bzZKUU94U3dyY2t2bmVPTFAtMDN6d3dFQm5iS1VEMG5wNUhyNHMtVnlOUFFQNUo1OVE4REVET1dTVklYOHdBeA?oc=5",
+   "source": "Google News HE: ביטחון",
+   "theme": "oil supply risk",
+   "themes_he": [
+    "ביטחון/איראן/טילים"
+   ],
+   "summary_he": "איראן מתכוננת לפרוץ את המצור הימי האמריקני.",
+   "tickers": [
+    {
+     "symbol": "XOM",
+     "direction": "up",
+     "why_he": "עימות ימי אפשרי במפרץ משפיע על פרמיית הסיכון של נפט."
+    }
+   ],
+   "confidence": 0.87,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "d2F0Y2ggICBpbmRpYSBoYXMgmwptymtc",
+   "ts": 1795230624000,
+   "title": "#WATCH | 🚨 \"India has low interest rates and they have a 7% GDP. We'd have a 14%, 15%, maybe even a 20% GDP.\" US President Donald Trump cited India's 7% GDP growth and low interest rates to argue that the US economy could grow by as much as 20 - LinkedIn",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSzh2NDFPWXNTbWE5bXlBcWFMcUUxeE9MT1ZOaUdYVjI4TlR5Y2JmVW80blBnUTZraWExQUhoSlBOUTJjSURDSHZmNnMwampCMXgzUFFpV19rWDdKNHNOYjFXSFJoLThxVHpXLVpuNXdvZDJmNEJuVmNnM1VaY1VFdU92Umxyek1EVFc3Y3IzUnI3MlFwdjBORnpLVWFMYWoyWmhB?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "monetary policy",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "טראמפ משתמש בנתוני הודו כדי לטעון שארה\"ב יכולה לצמוח חזק יותר בריבית נמוכה.",
+   "tickers": [
+    {
+     "symbol": "^GSPC",
+     "direction": "down",
+     "why_he": "ביקורת פוליטית על מדיניות הפד מעלה את התנודתיות במניות."
+    }
+   ],
+   "confidence": 0.86,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
+  {
+   "id": "ZG9uYWxkIHRydW1wIHByYWlzmwptrlq8",
+   "ts": 1795230296000,
+   "title": "Donald Trump praises India’s economic growth and criticises US Federal Reserve policy - India Today - India Today",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPc2cwQl9Mc3IzZlhWN253ckV2U05SbDVmOXNJSEJsLXZaTU1ycV8wT2F5dnlwNnFIcExJbEo2LU8xTFhoakNJR3otOXZJZkxDUUxON3RBMERTZ1V6c1F6OWg4ZUkxQUJ5OU16Tl96QktCdy0wWVh3MXBxanFmb0VDQVA4TUNZR0lGUjNLZFd0UDhLOWlZNDdWUUFaWkZXaFJLRXJ6czRmSEIxSUpJaUd6TkVkakVrRXYxQUh4MU9GTDdUZi1iVUNDV284a9IBywFBVV95cUxPc2cwQl9Mc3IzZlhWN253ckV2U05SbDVmOXNJSEJsLXZaTU1ycV8wT2F5dnlwNnFIcExJbEo2LU8xTFhoakNJR3otOXZJZkxDUUxON3RBMERTZ1V6c1F6OWg4ZUkxQUJ5OU16Tl96QktCdy0wWVh3MXBxanFmb0VDQVA4TUNZR0lGUjNLZFd0UDhLOWlZNDdWUUFaWkZXaFJLRXJ6czRmSEIxSUpJaUd6TkVkakVrRXYxQUh4MU9GTDdUZi1iVUNDV284aw?oc=5",
+   "source": "Google News EN: Fed/rates",
+   "theme": "monetary policy",
+   "themes_he": [
+    "ריבית/אינפלציה"
+   ],
+   "summary_he": "דונלד טראמפ משבח את הצמיחה בהודו ומבקר את מדיניות הפד.",
+   "tickers": [
+    {
+     "symbol": "^GSPC",
+     "direction": "down",
+     "why_he": "ביקורת על מדיניות הריבית של הפד מעוררת חשש בשווקים."
+    }
+   ],
+   "confidence": 0.86,
+   "analyzed_by": "ai+rules",
+   "high_confidence": true
+  },
   {
    "id": "c2F1ZGkgYXJhYmlhIGludGVymwpofils",
    "ts": 1795221334000,
@@ -10645,1241 +11259,9 @@
    "confidence": 0.3,
    "analyzed_by": "rules",
    "high_confidence": false
-  },
-  {
-   "id": "YmFuayBvZiBqYXBhbiB0byBymwmp105s",
-   "ts": 1795040938000,
-   "title": "Bank of Japan to raise interest rates in December and again by end-March, economists say: Reuters poll - WTVB",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOT1B3aHBzV3M4YkNTdUZHVE5lc1FpU0t2RGEzVkhVbzk1aUtjbXpiQXBIcndaQlhILXlVdFhlRThNNEpKbE14T1JzX2VpWk1CR2dmLXAtNzBBMG9jUmswWFRqclRPdF9sNnBQZjlETl9uN3FlYndpWUJjUXV3N2EtWkZyWG1mMTRYSGNFaE5lMDdZczlGaWdDaVBHR0tLRkVmZWY3MDhrQUZ3RUJfSFdBeW4zbjZOUmJyQlE?oc=5",
-   "source": "Google News EN: Fed/rates",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "ZmVkZXJhbCByZXNlcnZlIHBvmwmoph1c",
-   "ts": 1795040400000,
-   "title": "Federal Reserve policymakers concerned about financial system risks, minutes show - The Business Times",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOQVI1LVVoeHJ0SVhCdkluZ2tiSnA5NmcxcVlkR2FCQVVVdW1tUEktbXNZcXdOMXR4U1c2X0pONDk1NW5YWEt6SWhKRndUQkRfekk1Y1FtTS03YTZPWlgySmRyNnFaWE8xRFZhTU1tMEVsQWRYTUhkOW9Db3g3V3RaWjcxSThKUV9sa29CSkxWVmg3SDBsbUlyVHlDSjhvYktmNHZRbUVwaC1ub2xRSDhlNTdwaWRINlhGMUx1NkVxQ2Raa0NFLTJsM2tTYi1rek5QaDJmdnktMzJBYzlSNkVhWg?oc=5",
-   "source": "Google News EN: Fed/rates",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "15DXmdeo15DXnyDXnteQ16nXmwmolldk",
-   "ts": 1795040219000,
-   "title": "איראן מאשרת כי תקפה בסיסים אמריקניים - ומוסיפה איום למדינות המפרץ - מעריב",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1iMjFlWVJXQmkzWkZiTjFCRTdieTBsTnFvdnBzMUxDeURyV2dBV0V3cFRKRlY5R2w2MHhzbFU0Z0w2bENoUWhIc2FKdlZ0ZWZkVzJWSGQxUzlXd0puMWZVMUNKdnY?oc=5",
-   "source": "Google News HE: ביטחון",
-   "theme": "security-israel",
-   "themes_he": [
-    "ביטחון/איראן/טילים"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "ESLT",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "ESLT.TA",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "LMT",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "NOC",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "ITA",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ביטחון/איראן/טילים"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "ZmVkZXJhbCByZXNlcnZlIG1pmwmol4eg",
-   "ts": 1795040197000,
-   "title": "Federal Reserve Minutes: Fed Officials Weigh 50 BPS Rate Hike Amid Inflation Concerns - Cryptonews.net",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1HZ2ducnpBekpULUNSQVFPWnRMcjVGWE9vTEdqVmxoelk2WndoS21KODVEaXp2Z0hBSk1OaXJGTG5Mekg4aTNIZjFGbGEtRUZPdGM5VmgyWDI?oc=5",
-   "source": "Google News EN: Fed/rates",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "dXBkYXRlIHVzIGVxdWl0eSBpmwmojhrc",
-   "ts": 1795040121000,
-   "title": "Update: US Equity Indexes Mixed as Investors Await Anthropic IPO After Nvidia Hits Risk Sentiment, Fed Minutes Favor Tighter Policy",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-indexes-mixed-investors-221521655.html?.tsrc=rss",
-   "source": "Yahoo Finance",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "ZmVkcyBrYXNoa2FyaSBzYXlzmwmo9ec0",
-   "ts": 1795039650000,
-   "title": "Fed’s Kashkari says interest rates can impact tech investment By Investing.com - Investing.com",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZVBjZUN6aVRRRllSNk9XTmVEQTNXSm9EelowOGNmTEpuUWFEVjV1dmdNUzVYeXZsV3hzcjMxZWFQUWcwYjRGcW4xRkU0RktZbXROZ1lLM1EtM2JRTlVwbDY5Q1k1QWlpRjJRWjc4MGlQbjNRR2YwazQ1Qy1RT09ucWlWR2xwU2JVZUd0VWhFMDVIRk5TVlNmd1RkUm80eHl6cUhISFFYeHRtOHRSQnhyU3R3?oc=5",
-   "source": "Google News EN: Fed/rates",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "dGVocmFuIHdpZGVucyBhdHRhmwmo8ciw",
-   "ts": 1795039601000,
-   "title": "Tehran Widens Attacks On Gulf Nations After Latest U.S. Strike On Iranian Island - TWZ",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOU0l0MW5tVWM3OXgzajhaeXJTRXRuRjZZT3dqWE1xMW9OTEpONldjbHBnQ1V1MUJIZEhZWFFJLU1zWWlfWTJYREk3dUU1V2RVb1M1NUV0YUVXWEFwbFBlaUVKYTQyVlNWa1drMjJZTjV3aENsbl8tcnl1eExzcWs0Rkh1d1JIeG1kNjFhRW9TRzJGMEVROWpPamlMc2hWQnRUVnBaR3VjU2tTOGtGVXlfRHgyMA?oc=5",
-   "source": "Google News EN: Iran/Israel",
-   "theme": "security-israel",
-   "themes_he": [
-    "ביטחון/איראן/טילים"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "ESLT",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "ESLT.TA",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "LMT",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "NOC",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "ITA",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ביטחון/איראן/טילים"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "ZmVkIG1pbnV0ZXMgc2hvdyBkmwmo5ci0",
-   "ts": 1795039461000,
-   "title": "Fed Minutes Show December Hike Above 25 Basis Points Discussed - Bitcoin Foundation",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQSHZwZ3hsZXFkN196UGNRR19SaUhneng4T3FxSVkybkhnTy1tZ2pidUlJWldJWlp3MXowa0loZ0habE1pSDFWcVJXc1dOUlp3YU1VWmZyNWFHWmYyaEtJUHdqOUlGN0t5cmpIMTdKSmI1ZjdEb2lVMjBKRkpTY1p4RGVnM21KLTRCb20xUXpCVWluZXNlXzZ3dFF0eFVtOG9JU2ZVOWJiYWl4dnFOdmFxaXBLdVVMYXpwT3Vn?oc=5",
-   "source": "Google News EN: Fed/rates",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "dXBkYXRlIHdhbGwgc3RyZWV0mwmo0tow",
-   "ts": 1795039250000,
-   "title": "Update: Wall Street Mixed Amid Nvidia Sell-Off, Fed Minutes",
-   "link": "https://finance.yahoo.com/markets/stocks/articles/wall-street-mixed-amid-nvidia-220050802.html?.tsrc=rss",
-   "source": "Yahoo Finance",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "ZmVkZXJhbCByZXNlcnZlIHBhmwmnqr1c",
-   "ts": 1795038780000,
-   "title": "Federal Reserve Participants Signal Further Rate Hikes Likely - 조선일보",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNnBCRjdSR2NzUjhhRXREVktrdm14RUJGRFZ0UkR4SXE3a1d6YkJQV3FTMlZFelBicGJ2dXU0LUZyMXZ6MXpMMzIzTHVoZk9mOXJjOXhQcGlJcDN6MG9ZVDlHa2o0cXZwQ1FyZDJXVkdVRm8zTFc2c1JIZTI2VnFVbm5LZ2E0eXNvTUg3UUlR?oc=5",
-   "source": "Google News EN: Fed/rates",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "dGhlIGZlZCBjYW1lIGNsb3Nlmwmnmjsw",
-   "ts": 1795038584000,
-   "title": "The Fed came close to an October rate hike, FOMC minutes show - InvestmentNews",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSU9lOS1EWHNmc1NuOGF6Rm5mcUFFc05Da0dtNUxJV1BkVFlLMXA0cG10VTJRYllNOWFoeThpZlJJOGJ5QjN2N3gxQmpDWFA0VlJWdFFYZXZLNzZKV3lPYVVEdmhzRnZmUzJzcm9NTkhsQ0R3dU85aUlhQkEtdnRnWEhDb2tpXzh0XzJTSEhuQ3YtMUc2MDZZR3JSTzRnZG1oanNBRnNseHUzQmc?oc=5",
-   "source": "Google News EN: Fed/rates",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "ZG93IGRyb3BzIDU2MSBwb2lumwmnkfew",
-   "ts": 1795038485000,
-   "title": "Dow Drops 561 Points. Nvidia Reverses Rally As Fed Signals More Rate Hikes.",
-   "link": "https://www.ibtimes.com/us-stocks-dow-falls-nvidia-earnings-fed-rate-hikes-3809938?.tsrc=rss",
-   "source": "Yahoo Finance",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "16DXldep15DXqiDXlNee15jXmwmnj548",
-   "ts": 1795038425000,
-   "title": "נושאת המטוסים ג'ורג' וושינגטון עזבה את המזרח התיכון, שתי נושאות נותרו מול איראן - אמס",
-   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9OQWFqdGZGalQwVDkwaWRSV1Z1VjhsZWNFM1pMdlJwMzRxQU5Yd2JybTBjOFpCWi10d2hRWnR4Tlp3RFExQmhPSFRJRzM1QQ?oc=5",
-   "source": "Google News HE: ביטחון",
-   "theme": "security-israel",
-   "themes_he": [
-    "ביטחון/איראן/טילים"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "ESLT",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "ESLT.TA",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "LMT",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "NOC",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "ITA",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ביטחון/איראן/טילים"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "ZmVkIHBvaXNlZCB0byByYWlzmwmn7f1s",
-   "ts": 1795037878000,
-   "title": "Fed Poised to Raise Rates Further to Stem Inflation | Economy | U.S. News - U.S. News & World Report",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZlVDNUY5ZDlySFRVSWdRTUczMVVCWFkzdTVqNFhfdmgxSDVNWmt1ZW0wNGloS05DREZfQ0JZbVBIdldpdGI1d1ljTzZ4SUgzQWp4NGhiSTQzbHE3TW9EakdIQmkzNmthZEY1MUNjUUxvVGQ1NWlKN1NJcjRFMzNBM2dkVk5BY1VjSmZRNmp0RTY2Z09HSEVKNXJReHJaRmRKd0lERWRTWjFVOUE?oc=5",
-   "source": "Google News EN: Fed/rates",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "cGV0ZXIgc2NoaWZmIGZlZCBwmwmmqz88",
-   "ts": 1795037111000,
-   "title": "Peter Schiff: Fed policy remains highly accommodative despite rising inflation - Traders Union",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSWpZOHI3Vm5iRXNlTlFlRkRzQmRuWDd2T2xYNXlCWHVJd2pVUnVMY1RJMXNldWpVaXBmWmlyMWVSZTNuS3lNNXNoMDZneHRQbnNKRDVGVXVXTXlpbGpuekdoQTZjWHhfZ21EcG5wc2JXMjBaNHNXb0ZpYmYzLUt0LXNwVnl1OHEzd3oyc3JuMA?oc=5",
-   "source": "Google News EN: Fed/rates",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "15bXlSDXnNeQINep15DXnNeUmwmmkp5c",
-   "ts": 1795036818000,
-   "title": "\"זו לא שאלה של אם - אלא מתי\": החלופות שטראמפ בוחן לתקיפה באיראן - היום",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAxY2FlZE9aR0h3RkJnSEgwVW14OHhpdjJLZ25CQnhaMGxMZ1ZESHozdkx5Z2NvUlNXRWlPS3EwNGFITHkxNk9fQmg3Y0dES0ZlNGpCcXVGdzdYbFRtYXcxVTRteGI1bFEtN2pHNnRuZGY4Rmt2T185LW9RMElySzg?oc=5",
-   "source": "Google News HE: ביטחון",
-   "theme": "security-israel",
-   "themes_he": [
-    "ביטחון/איראן/טילים"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "ESLT",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "ESLT.TA",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "LMT",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "NOC",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "ITA",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ביטחון/איראן/טילים"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "ZmVkcyBrYXNoa2FyaSBmZWQgmwmmkkio",
-   "ts": 1795036812000,
-   "title": "Fed's Kashkari: Fed must make sure inflation expectations remain anchored - Forex Factory",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPR0JVVlg5aHRjMFV2ZVU5LS0tSnduNTNVM2J5R01lVUZQcjgxZ2lEb3JHZ1Uya1hvSVpYXzA4emlCRHBOZ21tM1YtcTZxTkoxbTVQRjNvek1YeXhDVDJiSXF6Z0JoU3NVek1GQTN2RjdlNmN0QXA2QXlZVnZBTFNhYVNiczVMM3ZBR3BIU2xDM0JfZ0lxRlJOcUc2ZU1CQkhsY0hzMTdR0gGjAUFVX3lxTFAxaWVBSWVCS0hNN3VlSVVwS1Iwdk11Zmw1YnpMeEpnVGVyNjFjeS1hQ1BTWHI5dkJBRzM5TnNmOG9uM3FvTmhyc2c1SUFkZ2hxT3FSVXdGRnRLYmN6V29jZUt1OFBXU1dreGQyNE5SU0pUQ2xxQm9SWlhpdzhzZGI3dG5MWnFZVXVTOHM3SE00SDBQUlpWZnRQRUdXbl9ybmJ3aUk?oc=5",
-   "source": "Google News EN: Fed/rates",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "ZmVkIHBvbGljeW1ha2VycyBmmwmmdxbk",
-   "ts": 1795036502000,
-   "title": "Fed policymakers focused on inflation risks in October, with some seeing need for bigger rate hike - Reuters",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQWp0U1B6TG9KQU5oY25mQTRtbk5hTUZxNnI3azdIZDNNcU9iN1hzSndVckt3eU5ReUZockwxa1JOMVYyNTQ5d281c3NnU1pEU3pKaEZMSUZEdFQ3bG9DaXk4Umx1NG5WQ3ZvMko2VzBYdlgwYUI0Rm9ud1kzU1VMeWdZNXlkd3FJWTBvc25qV1ROWDZubGV4SF9QUk1EcG9BWGprZzRxcU9xa2g5TmRiUDRqR0FoYmNreUNicmFiWQ?oc=5",
-   "source": "Google News EN: Fed/rates",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "bmVlbCBrYXNoa2FyaSBhdCB0mwmmdvs0",
-   "ts": 1795036500000,
-   "title": "Neel Kashkari at the FinRegLab AI Symposium - Federal Reserve Bank of Minneapolis",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNcG9pVUljUTFtVXFiQ2QxSFlrT0dJQkNvdDZIRFFrejQwNExqemtrdlVyNmFHTWVKdWhVaklxWGE2MFQ5YVk0aEd4T2xQQmREZFhXZjZoQ2pOdDZaSXBfMlR3YjBNVkpsNGhLN0dtNGlteThLczZOQ0wxUnNpYk0wNGtXeGY2ZmRaZ1FXdjljUGZhdw?oc=5",
-   "source": "Google News EN: Fed/rates",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "15HXptecINeU157XqteZ15fXmwmlszgo",
-   "ts": 1795035525000,
-   "title": "בצל המתיחות מול איראן: תפנית חריגה במעקב אחר מיקום נושאת המטוסים - כיפה",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9QeHl6VElvS2hjNzlNaW5VRTlaNkEwamdyLU1DQVdFMFBWeGFzWmlsWXhLYm5YNnBjYjBYOWUyeHJLMklRS1YwQ3p2RTZ6TEdMeGxtM2FFMjQ2R1FUVzdEWldZU19WbnFhLUpPMWdtaktWUdIBekFVX3lxTFBpQ0I4QmU2X2JqR3A5VkszcmkyVUFsVTF5X3J6YUxlZnZfMHBqM1ZRTlpVSDR6V0FQZ2hnY1FuU0xnUmFDSE1IY1VuVllydGhFLXJ0QnVOSHpPeVZjQmI0OWlZOTVZcFQ1SWpONERWaFdhSkNGWV9XTXJB?oc=5",
-   "source": "Google News HE: ביטחון",
-   "theme": "security-israel",
-   "themes_he": [
-    "ביטחון/איראן/טילים"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "ESLT",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "ESLT.TA",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "LMT",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "NOC",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "ITA",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ביטחון/איראן/טילים"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "d2VsY29tZSB0byB0aGUgYW50mwmlpq6g",
-   "ts": 1795035373000,
-   "title": "Welcome to the Anti-Tariff Club, Democrats—Now Truly Be Anti-Tariff - Cato Institute",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNmhja2s1VktlWGZkYUR4ZGJKTWhhb1pwd3V4ekdPMUdac1NaMVFDRVFFeFNYaFZPTEFYb3ZWSGtxc3VEWmh6Ty1QUkdmY04yUzA5VWtjZHFDcVNWc1A1ZTBaQTJKRS1WTlBaNUVsSnUxS1dBYldVVmlES0ZYc3l5Q1RPZlo3WjE0cExuQzZzOA?oc=5",
-   "source": "Google News EN: Trump/tariffs",
-   "theme": "tariffs",
-   "themes_he": [
-    "מכסים/סחר"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "NVDA",
-     "direction": "down",
-     "why_he": "מכסים/סחר"
-    },
-    {
-     "symbol": "AAPL",
-     "direction": "down",
-     "why_he": "מכסים/סחר"
-    },
-    {
-     "symbol": "TSLA",
-     "direction": "down",
-     "why_he": "מכסים/סחר"
-    },
-    {
-     "symbol": "AMD",
-     "direction": "down",
-     "why_he": "מכסים/סחר"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "ZmVkIG1pbnV0ZXMgc2hvdyBhmwmlkk80",
-   "ts": 1795035132000,
-   "title": "Fed Minutes Show Almost All Officials Expect More Rate Hikes - Bloomberg.com",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNT3JhS0Q0alA5RWNIWGxURDlLSWhic0NQQmY1MTJkTXlCclZDMWh4Z18xRGdhWXRsdWp2OTJjRExiSHZqRXFqSHU5VFB3WnNSV2hFWnNHdlRmRENzaDBsVGpWeTNGQU5ZRlJ0MzQza2tkUDFDdmxqMVlYNGlnM0dqajdnWVI3eVUxNVhibGhSXzZsQ2gxYlZuTk9MQ1VPUzV3ZWNxQ0NkRlZqOE9DUGpCbA?oc=5",
-   "source": "Google News EN: Fed/rates",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "ZmVkIG1pbnV0ZXMgc2hvdyBnmwmlj0o0",
-   "ts": 1795035060000,
-   "title": "Fed minutes show growing unease about the outlook for inflation - MarketWatch",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQR2Q3bl9jS2R2NkRscWFmSlBMMXZIX1NPQ0JkZjBLbUptUlY2enBQNXZ2RDIxWk55dXVhY1I1WVhiVDBxLUV5V3hPTXBlZHVVQUtCWTVtY3hmOF9oWmVyM0ZBUHQ4bTZPcFlKbFpvTk12WHhzOUVZRFRRYTlobGJsa0o2OUpxeVNSbm5iZHYyUHF1aFh3Q3FRUk92TGt3WnJfck16eFMyU1ZxUQ?oc=5",
-   "source": "Google News EN: Fed/rates",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "dWtyYWluZSBoYXMgYSBwcm9imwml8fhs",
-   "ts": 1795034566000,
-   "title": "Ukraine Has a Problem: Kyiv and Europe Fear Putin Will Talk Trump Into Lifting More Sanctions on Russia When They Meet in China - National Security Journal",
-   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOeW5nRk5McnBSa0xkLWNKVFptMmo3cTh5a01yaFdhVC1JMDR5Ul80dEV2SWRxcjlqR1QwNWJDNllLVng1Y2ZkTHpic0lxOV83eHMyWkx2b3k4MDZtcktuc2J1d2tMel84OVotcXBRQW9zWThkTHZiMlVoVXRXRldhUGl0RFRKSjA2OGlwU1ltTUplcnlvSDBfcklQVVhXT2EyeGFIRUk3NE82M1VLRUhGRlhmTmpTSUcxT1B1ZDBubkQzMXA0T1dvYmFTNVI2d0lNVzlvSzliM2xVMUpLTTRmUlVzVEJLV2pvbUloTUlzSzRPaEZoaFE?oc=5",
-   "source": "Google News EN: Trump/tariffs",
-   "theme": "tariffs",
-   "themes_he": [
-    "מכסים/סחר"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "NVDA",
-     "direction": "down",
-     "why_he": "מכסים/סחר"
-    },
-    {
-     "symbol": "AAPL",
-     "direction": "down",
-     "why_he": "מכסים/סחר"
-    },
-    {
-     "symbol": "TSLA",
-     "direction": "down",
-     "why_he": "מכסים/סחר"
-    },
-    {
-     "symbol": "AMD",
-     "direction": "down",
-     "why_he": "מכסים/סחר"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "15DXmdeo15DXnyDXqdec15XXmwml81ls",
-   "ts": 1795034548000,
-   "title": "איראן: שלוש מכליות נפט עלו באש לאחר שפגעו במוקשים ימיים סמוך למצר הורמוז - וואלה",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE4wMjlZS1BBUGhYdlR5U2pBcGR0VHphRXBoY1NOS3E3UWVKSWlfckpCRVdZNU5udWJVRFpnLXNyNS1SYWlLR3Rvb3BWZkN1RzJmSi1JeXktTkZLcnQyZDZ5TXV3?oc=5",
-   "source": "Google News HE: ביטחון",
-   "theme": "security-israel,oil",
-   "themes_he": [
-    "ביטחון/איראן/טילים",
-    "נפט/אנרגיה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "ESLT",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "ESLT.TA",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "LMT",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "NOC",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "ITA",
-     "direction": "up",
-     "why_he": "ביטחון/איראן/טילים"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ביטחון/איראן/טילים"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "ZmVkIG1pbnV0ZXMgc2hvdyBhmwml65pc",
-   "ts": 1795034460000,
-   "title": "Fed Minutes Show AI Fears and That a Bigger Rate Increase Is Still on the Table - Barron's",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbnp0Q0Ewb2RJLVdrQ3ducVFvam9tbmJHNE1FbU0wcXBGeVdDajlJTWNIVFFrSXRkM0EyYXRaeW4tdnVydTE0VmlCZng4dk0tZHllUHZzWTZMb3Nzd2hHdFYxRFJhVGhoUzdpcjZYRGJJRFhJb0Q5YlVjal9PQl92NElXRW81YmdFYWJQenRjWQ?oc=5",
-   "source": "Google News EN: Fed/rates",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
-  },
-  {
-   "id": "ZmVkIG1pbnV0ZXMgc2hvdyBimwmkyfxc",
-   "ts": 1795034100000,
-   "title": "Fed Minutes Show Broad Support for More Hikes as AI Debt Enters Stability Debate - BigGo Finance",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE95SlBCTjVkSE40aUxDQ2ZfRksxOGxyaU51V3Y5X200dWhWNWFNUmdSdW83SkVfZTEtWVdlVkl0NkFzVl9aaVhDaGh4UmMxVHZYdDZISDgtRmRPb0JZQnZXaHlhcG05cXlDaG1mVi0zZXZvR2ViR0E?oc=5",
-   "source": "Google News EN: Fed/rates",
-   "theme": "rates",
-   "themes_he": [
-    "ריבית/אינפלציה"
-   ],
-   "summary_he": "",
-   "tickers": [
-    {
-     "symbol": "JPM",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "XLF",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "LUMI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "POLI.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    },
-    {
-     "symbol": "DSCT.TA",
-     "direction": "down",
-     "why_he": "ריבית/אינפלציה"
-    }
-   ],
-   "confidence": 0.3,
-   "analyzed_by": "rules",
-   "high_confidence": false
   }
  ],
  "seen": {
-  "זלנסקי רוסיה מקבלת עשרות טילים בליסטיים מצפון קוריאה בכל חודש": 1794902135000,
-  "iran claims drone attack on us radar system at bahrain air base": 1794901890000,
-  "איראן ממשיכה לתקוף בבחריין טוענת שתקפה מכם אמריקאי": 1794901868000,
-  "פליטת פה או ניחוש ראש עיריית דימונה על איראן יום שישי הזה": 1794901526000,
-  "explosions heard in bahrain after threat alert iran claims drone attack on us radar": 1794900998000,
-  "terrifying leak iran preparing dirty bomb in washington trump in the crosshairs chemical strike possible": 1794900818000,
-  "ראש עיריית דימונה רומז מלחמה עם איראן כבר ביום שישי הקרוב": 1794900451000,
-  "המשוואה החדשה של איראן תקפו מתקן אמריקני בגלל הפרת המרחב האווירי": 1794899966000,
-  "annual inflation surpasses 4 as real wages decline nationwide": 1794899961000,
-  "any dam port or power plant near us israeli bases is dualuse irans ghalibaf": 1794899812000,
-  "ישראל פועלת לבלימת התחמשות חיזבאללה ארגון הטרור נערך לאפשרות של מלחמה  פרשנות": 1794899476000,
-  "inflation is sending us bond yields higher again heres why were not worried": 1794899250000,
-  "is iran using its 600 dams to support secret missile bases": 1794899183000,
-  "איראן מכוונת ללב אמריקה המודיעין חושף תוכניות לפיגוע רדיואקטיבי בוושינגטון": 1794899064000,
-  "europe today rwanda migrant hub crimea bridge strike irans hormuz offer": 1794898945000,
-  "iranian regime warns us israel your dams and power plants could also be targets": 1794898666000,
-  "פחות מחודשיים נותרו חלון התקיפה האמריקנית באיראן על סף סגירה": 1794898607000,
-  "איראן ועומאן דנו בשיט במצר הורמוז ובמשא ומתן המתנהל בניסיון למנוע הסלמה": 1794898227000,
-  "מכה לסמל של פוטין מתקפה מסיבית של אוקראינה": 1794898080000,
-  "מתקפה חריפה על ליברמן מתוך ישראל ביתנו חש מרומה ונבגד": 1794898001000,
-  "דיווח בcnn איראן מגבשת תוכניות לפגיעה בבכירי הממשל עם פצצה מלוכלכת": 1794897708000,
-  "natural gas and oil forecast supply story overtakes hormuz risk can brent hold 8915": 1794897688000,
-  "us dollar hits 19month peak on fed hike bets aussie dips": 1794897240000,
-  "iran reportedly eyes dirty bomb attack on washington us intel warns as third us aircraft carrier reaches west asia": 1794896321000,
-  "לגבי איראן מי שבלם את התקיפה ומי שחזר בו זה טראמפ": 1794896209000,
-  "oil prices slide as global glut fears eclipse hormuz attacks": 1794895800000,
-  "אפליקציות כושר וביקורות בגוגל כך אספה איראן מודיעין על צבא ארהב": 1794895199000,
-  "irans ghalibaf warns us israel over dualuse infrastructure": 1794894863000,
-  "can iran actually develop missiles beyond 2000 km range": 1794894600000,
-  "why so many dams missile strikes on iran may solve an old puzzle": 1794894413000,
-  "warshs first big test stubborn inflation pushes toward a rate hike as white house presses for a hold": 1794893700000,
-  "דיווח איראן מתכננת לפגוע בבכירים בארהב באמצעות פצצה מלוכלכת": 1794893700000,
-  "ghalibaf warns us and israel over threats to irans civilian infrastructure": 1794893683000,
-  "irgc navy says two oil tankers hit mines and catch fire in strait of hormuz how 12 outlets framed it": 1794892766000,
-  "דיווח איראן פועלת לפגוע בבכירים בממשל האמריקני באמצעות נשק כימי": 1794892589000,
-  "oil prices fall over 2 as hormuz supply flows recover": 1794892097000,
-  "institutional forecast the federal reserve will implement consecutive rate hikes in december and january followed by a prolonged pause": 1794892001000,
-  "איראן תכננה לתקוף בכירי ממשל טראמפ בנשק כימי או פצצה מלוכלכת בוושינגטון": 1794891549000,
-  "דיווח דרמטי בארהב איראן מגבשת תוכניות לפוצץ פצצה מלוכלכת או נשק כימי בוושינגטון": 1794891406000,
-  "איראן פרסמה את תמונות הקצינים האמריקנים  וצירפה איום מצמרר": 1794891399000,
-  "gold recovers from ytd low fed hike bets and bullish usd to cap further gains": 1794890257000,
-  "middle east latest tanker attacked in strait of hormuz off oman ukmto says": 1794889932000,
-  "איראן תקפה בכטבמים בסיס של ארגון כורדי בעיראק": 1794889814000,
-  "asia stocks slide as us tightens ai chip curbs ahead of nvidia results": 1794889558000,
-  "מודיעין אמריקני איראן מתכננת פיגוע כימי בוושינגטון": 1794888960000,
-  "iran update november 16 2026": 1794888917000,
-  "african economies to end year with high rates as fed risks loom": 1794888900000,
-  "אנחנו תחת טילים מאז 1991 הטיל הבא יהיה טיל אחד יותר מדי": 1794888060000,
-  "צעדיה של סעודיה בתימן יקבעו גם את גבולות ההכלה מול איראן": 1794888060000,
-  "אחרי קריסת קו ההגנה של חיזבאללה האיום החדש שצהל נערך אליו  והתקיפה בעומק לבנון  אבי אשכנזי": 1794888000000,
-  "israeli aircraft hit hezbollahbound arms near syrian border as un exit approaches": 1794887936000,
-  "the president of the federal reserve bank of cleveland advocates for gradual interest rate hikes warning that rising inflation expectations could force the central bank to intensify its tightening measures": 1794887482000,
-  "how trump and xi went from tariff war to trade truce": 1794887340000,
-  "bessent says nvidia needs a dramatic shakeup as a singapore firm reportedly moved at least 75 billion of nvidia chips to china": 1794887022000,
-  "secret us b94 nuclear bunkerbuster bomb revealed amid fears of possible iran strike  report": 1794886811000,
-  "new zealand dollar slides towards 18month lows after rbnz q4 inflation expectations qoq": 1794886728000,
-  "חדשות 04  מתקפה דרמטית על קייב טראמפ בדרך לפסגת המעצמות  סיכום חדשות הלילה": 1794886473000,
-  "brent falls to us92 despite continued tanker attacks in strait of hormuz": 1794886461000,
-  "fed governor warsh outlines three ai economic scenarios": 1794885365000,
-  "is nvidias turmoil advanced micro devices amd biggest opening yet": 1794885286000,
-  "fed chair kevin warsh warned that ai could trigger job losses or a stock bust if it disappoints": 1794885077000,
-  "oil slides as hormuz flows rebound and surplus forecasts build": 1794884064000,
-  "new zealand dollar falls toward 18month lows following rbnz q4 inflation expectations qoq": 1794883476000,
-  "ai economic impact  fed considers three growth and unemployment scenarios": 1794883435000,
-  "gold holds near 3860 after 14month low as traders price in 2027 fed tightening": 1794882900000,
-  "new us congress must demand a clear strategy on iran": 1794881993000,
-  "two more fed hikes then a long pause goldman reads a third hot core cpi print": 1794880655000,
-  "investors are fleeing navitas semiconductor nvts heres why": 1794880341000,
-  "oil slips as recovering middle east exports blunt gulf tensions": 1794879420000,
-  "irans dams may have been built to support missile bases  nyt": 1794879400000,
-  "iran plans to strike us with dirty bomb report": 1794879133000,
-  "fourth quarter 2026 survey of professional forecasters": 1794878673000,
-  "oil prices today brent crude falls to 92 as supply glut builds six tankers hit in hormuz": 1794878514000,
-  "oil tanker catches fire near strait of hormuz in 4th attack in 24 hours suffers significant damage": 1794878090000,
-  "this is a huge week for the stock market nvidia earnings fed minutes and anthropics ipo": 1794877801000,
-  "oil tanker transiting strait of hormuz attacked near oman 4th in 24 hours": 1794877680000,
-  "canadian dollar weakens against us dollar amid fed rate hike bets falling oil prices": 1794876776000,
   "fed gov lisa cook balks at white house inquiry into her mortgages": 1794937140000,
   "אין דחיפות השאלות שיכריעו על תקיפה באיראן  והמסר האמריקני בים הערבי": 1794936290000,
   "markets price a 954 chance of a quarterpoint fed hike in december": 1794936243000,
@@ -12042,21 +11424,6 @@
   "בחריין הודיעה שיירטה מתקפה אווירית של איראן שמסרה שתקפה מכם אמריקאי": 1794902996000,
   "federal reserve official warns ai agents could speed up future bank runs": 1794902939000,
   "irans irgc reports strike on us radar system in bahrain": 1794902847000,
-  "מתקפה שלישית בתוך כמה ימים כטבמים איראניים תקפו בבחריין": 1794902418000,
-  "איראן ממשיכה לתקוף בבחריין טוענת שתקפה מכם אמריקני": 1794901868000,
-  "אש אדירה בלב ים איראן במשוואה חדשה תקפה מתקן אמריקני בגלל הפרת המרחב האווירי": 1794899966000,
-  "irans ghalibaf warns us israel against targeting civilian infrastructure": 1794899820000,
-  "דיווח איראן מגבשת תוכניות לפגוע בבכירי ממשל טראמפ באמצעות פצצה מלוכלכת או נשק כימי": 1794899156000,
-  "irans revenge dirty bomb strike on washington  firstpost live": 1794898955000,
-  "usisraeliran war what uae residents need to know today nov 17 2026": 1794897155000,
-  "crude prices slide on signs of surplus supply": 1794896140000,
-  "shafaq newsoil prices decline on supply surplus expectations": 1794893754000,
-  "דיווח איראן פועלת לפגוע בבכירים בממשל האמריקני בנשק כימי": 1794892589000,
-  "white house posts socalled hype videos combining real iran war footage alongside movie video game clips  abc news": 1794892195000,
-  "lessons from a burning river": 1794891600000,
-  "corporations are using trump tariff refunds to reward executivesnot help consumers": 1794881850000,
-  "federal reserve models three ai economic scenarios boom unemployment or bubble burst": 1794880291000,
-  "oil prices caught between tanker attacks and rising mideast exports": 1794879420000,
   "irans kheibar missile with a speed of mach 16 and a range of 4000 km challenges global defenses": 1794959896000,
   "the us attacks iranian missile launch site": 1794959894000,
   "the price of inflating away public debt why bond markets demand higher interest rates": 1794959296000,
@@ -12173,15 +11540,6 @@
   "iran oman discuss shipping diplomacy as hormuz blockade endures": 1794905283000,
   "fed holds interest rates steady as inflation hits 3year high  abc news": 1794905039000,
   "yemen govt forces report 3 fishermen injured others missing in houthi missile strike near hanish island": 1794902504000,
-  "irgc claims strike on us radar at isa base in bahrain": 1794900104000,
-  "איראן סוכן מוסד ניסה להתנקש ברב יהודי  והוצא להורג": 1794899190000,
-  "התעלומה מאחורי המאמר על איראן שטראמפ שיתף מחדש": 1794897240000,
-  "president hammack the fed should prepare for possible treasury market intervention while conditions are calm": 1794891600000,
-  "asean a supply chain priority for us firms even as trump tariffs see pushback  the straits times  newspaper": 1794890971000,
-  "trumps tariffs cast shadow over apec talks  the straits times  newspaper": 1794890960000,
-  "iran demands compensation from persian gulf states over usisraeli attacks  state media": 1794882629000,
-  "oil edges up on tanker attacks expected us crude drop": 1794879420000,
-  "brent settles higher in choppy trade amid hormuz attacks usiran tensions": 1794877643000,
   "ארצות הברית תקים 17 בונקרים ממוגנים באזור מחשש לאיומי טילים": 1794988427000,
   "british pound retreats further as uk consumer inflation growth moderates": 1794988293000,
   "איראן הקשיחה את עמדתה במשא ומתן בעקבות המפלה הרפובליקנית בבחירות האמצע  עדכונים שוטפים": 1794987868000,
@@ -12301,7 +11659,6 @@
   "trump faces escalating oil crisis over iran blocking strait of hormuz  abc news": 1794910150000,
   "oil prices continue to fall what is weighing on prices despite the risks in the strait of hormuz": 1794907620000,
   "yemens govt forces report houthi ballistic missile attack on mokha port": 1794903372000,
-  "timeline how trump and xi went from tariff war to trade truce": 1794902400000,
   "lisa cook refuses to participate in trump administrations latest effort to remove her from fed": 1795020981000,
   "trump carney explore path to trade deal amid tariff tensions": 1795020947000,
   "מפקד צבא איראן מאיים תגובתנו תהיה חזקה והרסנית יותר מבעבר": 1795020789000,
@@ -13519,6 +12876,101 @@
   "golds slide deepens as ai rout rate hike bets hurt bullion": 1795151143000,
   "netanyahu calls iran strike unavoidable as trump rallies xi and putin on nuclear proliferation": 1795147634000,
   "saudi arabia intercepts houthi missile drones over jazan abha khamis mushait": 1795146055000,
-  "oil settles flat as hormuz disruptions offset global surplus fears money news": 1795138517000
+  "oil settles flat as hormuz disruptions offset global surplus fears money news": 1795138517000,
+  "pakistan backs saudi arabias right to defend itself after houthi attacks target riyadh": 1795247337000,
+  "inflation climbs to 4 fed eyes rate hike": 1795246723000,
+  "מה אמר טראמפ על שני הטילים והרחפן אחד שהתרסקו בפולין": 1795246262000,
+  "if you get a deal on 338 tariffs take it  dems will handle the rest us sen": 1795245641000,
+  "saudiled coalition says intercepted three houthi missiles targeting riyadh": 1795245377000,
+  "how war has shifted irans missile ambitions beyond the middle east  almonitor": 1795245283000,
+  "thailand to scrap tariffs on us goods says trump": 1795245243000,
+  "השמיים נפלו על איראן המשטר בטהרן איבד שליטה באופן סופי": 1795245172000,
+  "ארהב הכריזה על הצעות המשא ומתן של איראן כבלתי מקובלות": 1795245132000,
+  "irans deterrence extends beyond west asias borders": 1795244820000,
+  "pakistan condemns houthi strike on riyadh": 1795244040000,
+  "brent crude price 9257 8 days to opec 2027 quota call": 1795243849000,
+  "pm shehbaz condemns houthi attack on riyadhs king abdullah financial district": 1795243162000,
+  "באיראן מאותתים לא נסכים להוצאת האורניום המועשר": 1795242598000,
+  "oil prices climb on houthi and hormuz risks": 1795241312000,
+  "איראן נערכת לנסות לשבור את המצור האמריקני שיירת מכליות תצא מהמפרץ": 1795240643000,
+  "the saudiled coalition fighting yemens iranaligned houthis said on saturday it had intercepted and destroyed three ballistic missiles fired towards riyadh marking the second houthi attack on the saudi capital in a few days after its tallest skyscraper was str": 1795240221000,
+  "saudi coalition intercepts three houthi missiles over riyadh as attacks target saudi financial military and oil assets": 1795239171000,
+  "trump fears irans radioactive bomb strike on washington dc cia  fbi on high level alert  watch": 1795238561000,
+  "oil prices set for third straight weekly decline on strong mideast export flows": 1795238251000,
+  "trump dismisses vance rift reaffirms iran strike plans": 1795238130000,
+  "iran urges world to remember 168 killed in us airstrikes on school in minab": 1795238108000,
+  "trump praises indias 7 gdp growth slams us federal reserve over high interest rates": 1795237536000,
+  "nyt dam theory ignores history and politics of water in iran": 1795237536000,
+  "saudiled coalition intercepts three houthi missiles targeting riyadh": 1795237330000,
+  "saudiled coalition intercepts three houthi missiles headed for riyadh": 1795236012000,
+  "הסלמה בעימות בין הקואליציה לקבוצת אנסאר אללה טילים מכוונים לריאד ותקיפות אינטנסיביות בתימן": 1795235202000,
+  "ארהב ממשיכה לתת לטראמפ את הסמכות לפעול נגד איראן": 1795234888000,
+  "trump hails indias 7 gdp growth low interest rates as he lambasts us fed reserve": 1795234458000,
+  "trump cites indias 7 pc growth to argue us could hit 1520 pc with lower interest rates": 1795234185000,
+  "oil prices snap back as tanker fire near hormuz revives war fears but brent still posts third weekly loss": 1795234182000,
+  "point tariffs arent driving inflation  the feds numbers say so": 1795233600000,
+  "look at india trump targets fed over high interest rates claims us could grow 20 percent": 1795233495000,
+  "us president praises indias economic growth  low interest rates": 1795232809000,
+  "wall street faces inflation test after ai selloff as strategists warn on rebounds": 1795231260000,
+  "look at india trump cites 7 gdp growth to slam us federal reserve": 1795230938000,
+  "ארהב הטילה סנקציות חדשות על סוחרי נפט איראניים": 1795230717000,
+  "איראן מתכוננת לשבור את המצור של חיל הים האמריקאי": 1795230712000,
+  "watch   india has low interest rates and they have a 7 gdp wed have a 14 15 maybe even a 20 gdp us president donald trump cited indias 7 gdp growth and low interest rates to argue that the us economy could grow by as much as 20": 1795230624000,
+  "donald trump praises indias economic growth and criticises us federal reserve policy  india today": 1795230296000,
+  "look at indias 7 growth trump slams fed over high interest rates claims us gdp could": 1795227080000,
+  "houthis strike riyadh after saudiled coalitions special operation in yemen": 1795227031000,
+  "gov whitmer says she warned trump tariffs would hurt mike rogers in michigan election": 1795226820000,
+  "trump accuses the fed of being politicized demands the lowest interest rates in the world": 1795226400000,
+  "look at india trump slams political us central bank over high interest rates  world news": 1795224901000,
+  "coalition intercepts 2 houthi ballistic missiles over jazan debris in shuqaiq": 1795224809000,
+  "איראן משרטטת קו אדום מזהירה ארהב מפני נשק גרעיני": 1795223769000,
+  "democrats pledge to target trumps tariffs in new congress": 1795223719000,
+  "saudi coalition says it intercepted three houthi missiles over riyadh  jerusalem post": 1795223102000,
+  "whiteman bomb wings receive presidential unit citation for iran strike mission": 1795223100000,
+  "iran denies reports of usisraeli missile strike on qeshm island": 1795223031000,
+  "chicago fed president warns inflation is headed the wrong way": 1795223019000,
+  "איראן מרכיבה 14 ספינות תוך התנגדות למצור האמריקאי": 1795222805000,
+  "הנשיא דונלד טראמפ הגיב לתנאי השלום של איראן": 1795222668000,
+  "coalition air defenses intercept 3 houthi ballistic missiles targeting riyadh": 1795221462000,
+  "saudi arabia says it intercepts three houthi missiles targeting riyadh": 1795221334000,
+  "us senator says canada should make interim tariff agreement let congress legislate longterm deal": 1795220700000,
+  "warner says trump is raising costs with his war and tariffs while kicking millions off snap  all while spending 3 million taxpayer dollars on white house park bricks": 1795219500000,
+  "jd vance refuses to endorse trumps decision to strike iran": 1795219095000,
+  "dollaryen falls from upper 158 range as us inflation expectations ease rate hike bets recede": 1795217100000,
+  "israel strikes hezbollah weapons site": 1795212196000,
+  "saudi coalition intercepts houthi missile drones": 1795212136000,
+  "oil edges higher as iran tempers hopes of swift hormuz reopening": 1795211850000,
+  "trump delays decision on iran strikes until next year": 1795210712000,
+  "הצומת האסטרטגי מול איראן האם המטרה היא שחיקת יכולות או הכרעת המשטר": 1795209151000,
+  "brent oil falls 5 to 91 despite daily hormuz tanker strikes": 1795208815000,
+  "trumps tariffs have panama looking to diversify can mercosur be the answer": 1795206366000,
+  "look at india trump slams us central bank for high interest rates": 1795202406000,
+  "דיווח ויטקוף וקושנר נועדו בברלין עם מתווכים מקטאר לדון במשא ומתן עם איראן": 1795201470000,
+  "trump administration pays out milestone 100 billion in tariff refunds  abc news": 1795200456000,
+  "anna paulson backs deliberate hikes to bring inflation to 2 target": 1795200083000,
+  "גורם ישראלי בכיר אופציית התקיפה באיראן אינה מיידית": 1795198173000,
+  "iran strike coming usisrael military chiefs meet to plan  jerusalem dateline": 1795196800000,
+  "oil prices set for 3rd straight week of decline on west asia export flows": 1795195697000,
+  "the japanese yen gains as japans inflation hits its highest since november 2025": 1795194813000,
+  "goldman sachs forecasts inflation at 24 by end of 2027": 1795194346000,
+  "israel reportedly turns to cheaper missile defenses as iran tensions escalate": 1795190343000,
+  "איראן שהואשמה בפיתוח נשק ביולוגי מאשימה את ארהב בחזרה על התרחיש העיראקי משנת 2003": 1795190250000,
+  "ארהב הוציאה מעל 48 מיליארד דולר על הסכסוך עם איראן": 1795190217000,
+  "fact check 2018 video passed off as houthi missile strike on riyadh alfaisaliah tower": 1795188637000,
+  "world absorbs historic iran war oil supply loss but depleted stocks bring risks": 1795188452000,
+  "two tankers carrying saudi oil attacked in strait of hormuz": 1795187743000,
+  "saudi coalition and houthis exchange threats to bomb key ports": 1795186752000,
+  "iran is starting to look desperate and that is bad news tehran keeps firing missiles at tankers in the strait of hormuz": 1795185930000,
+  "doha film festival lifts off as gulf states remain on high alert amid iran strikes read more below": 1795183222000,
+  "iran war live houthi rebels say financial centre in riyadh is a military target": 1795181522000,
+  "oil set for third weekly decline on strong middle east export flows": 1795178140000,
+  "tankers hit mines in the strait of hormuz so why are oil prices falling": 1795177698000,
+  "brace for a flood of oil as soon as hormuz reopens  energy news top headlines commentaries features  events": 1795175651000,
+  "fujairah oil zone hit by fire after drone attack as uae says it intercepted iran missiles": 1795174605000,
+  "middle east latest saudi arabia intercepts incoming houthi drones and missiles": 1795174389000,
+  "houthi strike damages riyadhs tallest tower as kingdom vows response": 1795172877000,
+  "חדשות 04  דיווח ישראל שדרגה את מערכת קלע דוד  ותוכל להתמודד עם מתקפות טילים ממושכות": 1795169521000,
+  "חדשות 04  הסנאט האמריקני דחה הצעה להגבלת סמכויות המלחמה של טראמפ נגד איראן": 1795169424000,
+  "weve got time trump suggests iran war will continue into 2027": 1795167009000
  }
 }
